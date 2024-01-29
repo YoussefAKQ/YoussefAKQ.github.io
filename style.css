@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+* {
+    background-color: rgb(21, 38, 53);
+}
+
+.container {
+    max-width: 1200px;
+    margin:0 auto;
+    text-align: center;
+}
+
+.fotonombre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 80%; /* Ajusta este valor según tus necesidades */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+}
+
+.texto-imagen {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    margin-bottom: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.nombreprincipal {
+    color: white;
+    font-size: 50px;
+    font-family: 'PT Sans', sans-serif;
+    margin-bottom: -20px;
+}
+
+.imagen {
+    width:170px;
+    padding-right: 10px;
+    padding-top: 30px;
+}
+
+.miniimagen {
+    margin-top: 10px;
+    width: 50px;
+    height: auto;
+}
+
+.primerboton {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(to bottom right, #1e5799, #2989d8);
+    border-radius: 5px;
+    border: none;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+}
+
+.content-below {
+    width: 80%; /* Asegúrate de que este valor sea el mismo que el ancho de .fotonombre */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+}
+
+.about-section {
+    text-align: left;
+    padding-left: 10%; /* Ajusta este valor según tus necesidades */
+}
+
+.about {
+    font-size: 24px; /* Ajusta este valor según tus necesidades */
+    font-weight: bold;
+}

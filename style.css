@@ -7,15 +7,17 @@ body {
 }
 
 .main {
-    padding-left: 25%;
+    padding-left: 35%;
     padding-right: 25%;
     flex-direction: row;
-    min-width: 500px;
+    min-width: 550px;
+    max-width: 400px;
 }
 
 .perfil{
     flex-direction: row;
     display:flex ;
+    padding: 15px;
 }
 
 
@@ -24,9 +26,12 @@ hr {
 }
 
 .imagenperfil{
-    width: 200px;
+    width: 175px;
+    height: 175px;
     align-items: left;
-    padding: 10px;
+    border-radius: 50%;
+    border: 10px solid rgb(21, 25, 44);
+    margin-right: 5px;
 }
 
 .textoperfil{
@@ -35,17 +40,27 @@ hr {
 
 #descargarCv {
     display: inline-block;
-    background-color: #1a94aa;
-    border: none;
+    background-color: #3a8e9c;
     color: white;
     padding: 12px 32px;
     text-align: center;
     text-decoration: none;
     font-size: 14px;
     margin: 4px 2px;
-    cursor: pointer;
-  }
+}
+
 
 .aboutme{
     
 }
+
+.Lenguajes, .Herramientas {
+    font-size: 15px;
+    align-items: center;
+}
+
+.Redes img {
+    flex-direction: row;
+    width: 50px;
+    padding: 7px;
+} 

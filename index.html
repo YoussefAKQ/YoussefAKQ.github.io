@@ -13,7 +13,7 @@
             <div class="textoperfil"> 
                 <h1>Youssef Khalifa</h1>
                 <p>I'm a Software student at IES Vista Alegre, Madrid.</p>
-                <a href="docs/CvYoussefDAM.pdf" download id="descargarCv">Download CV</a>
+                <a href="docs/CvYoussefDAM.pdf" class="descargarCv">Download CV</a>
             </div>
         </div>
         <hr>
@@ -29,20 +29,43 @@
                 ✍️My coding languages are Python, Java, SQL, HTML and CSS for now.
                 <br>
  
-         </div><br>
-         <div class="Herramientas">
+        </div><br>
+        <div class="Herramientas">
             <h1>Tools</h1>
             My tools are MySQL Workbench, Eclipse, VS Code, Linux and Github for now.
             <br>
 
             
-         </div><br>
+        </div><br>
+         <h1 class="smt">Social Media</h1>
         <div class="Redes">
-            <h1>Social Media</h1>
-                <a href="https://twitter.com/YoussefAKQ"><img src="imagenes/Twitter.svg"></a>
-                <img src="imagenes/Instagram.svg">
-                <img src="imagenes/LinkedIn.svg">
+            <a href="https://twitter.com/YoussefAKQ"><div class="cubo1"><img src="imagenes/Twitter.svg"><br>Twitter</div></a>
+            <a href="https://www.linkedin.com/in/youssef-alexander-khalifa-quispe-622a6b2bb/"><div class="cubo2"><img src="imagenes/LinkedIn.svg"><br>LinkedIN</div></a>
+            <a href="https://github.com/YoussefAKQ"><div class="cubo3"><img src="imagenes/Github-Dark.svg"><br>Github</div></a>
          </div>
+         <h1 class="smt">Email</h1>
+        <div class="email-container" onclick="copyToClipboard('youssefdam2023@gmail.com')">
+            <div class="email-address">youssefdam2023@gmail.com</div>
+        </div>
+        <script>
+            function copyToClipboard(text) {
+              var textarea = document.createElement("textarea");
+              textarea.textContent = text;
+              textarea.style.position = "fixed";  // Prevent scrolling to bottom of page in MS Edge.
+              document.body.appendChild(textarea);
+              textarea.select();
+              try {
+                document.execCommand("copy");  // Security exception may be thrown by some browsers.
+                alert('Correo electrónico copiado al portapapeles');
+              } catch (ex) {
+                console.warn("Copy to clipboard failed.", ex);
+                return false;
+              } finally {
+                document.body.removeChild(textarea);
+              }
+            }
+            </script>
+
     </div>
 </body>
 </html>

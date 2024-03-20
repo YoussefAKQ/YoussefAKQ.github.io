@@ -10,7 +10,7 @@ body {
     padding-left: 35%;
     padding-right: 25%;
     flex-direction: row;
-    min-width: 550px;
+    min-width: 700px;
     max-width: 400px;
 }
 
@@ -23,6 +23,8 @@ body {
 
 hr {
     width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .imagenperfil{
@@ -38,20 +40,20 @@ hr {
     padding: 10px;
 }
 
-#descargarCv {
-    display: inline-block;
-    background-color: #3a8e9c;
+.descargarCv {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #3e6291;
     color: white;
-    padding: 12px 32px;
-    text-align: center;
+    border-radius: 25px;
     text-decoration: none;
-    font-size: 14px;
-    margin: 4px 2px;
+
 }
 
-
-.aboutme{
-    
+.descargarCv:hover{
+    background-color: #2b5064;
 }
 
 .Lenguajes, .Herramientas {
@@ -60,7 +62,96 @@ hr {
 }
 
 .Redes img {
-    flex-direction: row;
-    width: 50px;
-    padding: 7px;
+    width: 40px;
+    padding: 11px;
+    
 }
+
+.Redes {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    pointer-events: none;
+}
+
+.cubo1 {
+    border: 1px solid rgb(78, 78, 78);
+    width: 150px;
+    height: 70px;
+    border-radius: 10%;
+    margin: 10px;
+    flex-direction: row;
+    display: flex;
+    text-decoration: none;
+    color: rgb(88, 180, 255);
+    pointer-events:all;
+    margin-left: 0px;
+}
+
+
+.cubo2 {
+    border: 1px solid rgb(78, 78, 78);
+    width: 150px;
+    height: 70px;
+    border-radius: 10%;
+    margin: 10px;
+    flex-direction: row;
+    display: flex;
+    text-decoration: none;
+    color: rgb(50, 116, 170);
+    pointer-events:all;
+}
+
+.cubo3 {
+    border: 1px solid rgb(78, 78, 78);
+    width: 150px;
+    height: 70px;
+    border-radius: 10%;
+    margin: 10px;
+    flex-direction: row;
+    display: flex;
+    text-decoration: none;
+    color: rgb(140, 141, 141);
+    pointer-events:all;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display:inline-block ;
+}
+
+.cubo1 a, .cubo2 a, .cubo3 a {
+    display: inline-block;
+    pointer-events: none;
+}
+
+
+.cubo1:hover, .cubo2:hover, .cubo3:hover {
+    background-color: rgb(55, 68, 88); /* Cambia esto al color que prefieras */
+}
+
+.smt {
+    margin-bottom: 5px;
+}
+
+.email-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #444;
+    border-radius: 10px;
+    width: 85%;
+    margin: 0 auto;
+    cursor: pointer;
+    margin-left:0px ;
+    margin-top: 10px;
+  }
+  
+
+  
+  .email-address {
+    flex-grow: 1;
+  }
+  
+

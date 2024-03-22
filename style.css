@@ -1,5 +1,10 @@
  @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
+html {
+    scrollbar-color: rgb(129, 127, 127) rgb(79, 79, 80);
+}
+
+
 body {
     background-color: rgb(35, 44, 58);
     color: #ffffff;
@@ -9,6 +14,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    scrollbar-color: rgb(56, 56, 56) rgb(148, 148, 150);
 }
 
 .main {
@@ -167,6 +173,8 @@ a {
   .email-address {
     flex-grow: 1;
   }
+
+
   
 
   @media screen and (max-width: 650px) {

@@ -143,7 +143,6 @@ a {
     pointer-events: none;
 }
 
-
 .cubo1:hover, .cubo2:hover, .cubo3:hover, .cubo4:hover {
     background-color: rgb(55, 68, 88); /* Cambia esto al color que prefieras */
 }
@@ -164,9 +163,7 @@ a {
     margin-left:0px ;
     margin-top: 10px;
   }
-  
 
-  
   .email-address {
     flex-grow: 1;
   }

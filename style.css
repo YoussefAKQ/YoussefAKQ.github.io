@@ -126,9 +126,11 @@ hr {
     flex-direction: row;
     display: flex;
     text-decoration: none;
-    color: rgb(140, 141, 141);
+    color: rgb(194, 154, 81);
     pointer-events:all;
 }
+
+
 
 a {
     text-decoration: none;
@@ -142,7 +144,7 @@ a {
 }
 
 
-.cubo1:hover, .cubo2:hover, .cubo3:hover {
+.cubo1:hover, .cubo2:hover, .cubo3:hover, .cubo4:hover {
     background-color: rgb(55, 68, 88); /* Cambia esto al color que prefieras */
 }
 
@@ -224,6 +226,7 @@ a {
         margin: 10px;
         font-size: 17px;
         align-items: top;
+        color: rgb(194, 154, 81);
     }
   }
 
@@ -234,13 +237,13 @@ a {
         text-decoration: none;
         pointer-events: none;
     }
+  }
 
-     @media screen and (max-width: 700px) {
+  @media screen and (max-width: 700px) {
     .Redes{
         flex-wrap: wrap;
         display: flex;
         text-decoration: none;
         pointer-events: none;
     }
-  }
   }

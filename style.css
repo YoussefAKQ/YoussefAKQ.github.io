@@ -4,14 +4,16 @@ body {
     background-color: rgb(35, 44, 58);
     color: #ffffff;
     font-family: "Plus Jakarta Sans", sans-serif;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .main {
-    padding-left: 35%;
-    padding-right: 25%;
-    flex-direction: row;
-    min-width: 700px;
-    max-width: 400px;
+    width: 100%;
+    max-width: 700px;
 }
 
 .perfil{
@@ -115,6 +117,19 @@ hr {
     pointer-events:all;
 }
 
+.cubo4 {
+    border: 1px solid rgb(78, 78, 78);
+    width: 150px;
+    height: 70px;
+    border-radius: 10%;
+    margin: 10px;
+    flex-direction: row;
+    display: flex;
+    text-decoration: none;
+    color: rgb(140, 141, 141);
+    pointer-events:all;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -155,3 +170,70 @@ a {
   }
   
 
+  @media screen and (max-width: 650px) {
+
+    .perfil, .textoperfil, .descargarCv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .textoperfil {
+        margin-top:-20px ;
+    }
+
+    .imagenperfil {
+        margin-top: 15px;
+    }
+
+    .cubo1 {
+        border: 1px solid rgb(78, 78, 78);
+        width: 165px;
+        height: 70px;
+        border-radius: 10%;
+        margin: 10px;
+        font-size: 17px;
+        align-items: top;
+    }
+    
+    
+    .cubo2 {
+        border: 1px solid rgb(78, 78, 78);
+        width: 165px;
+        height: 70px;
+        border-radius: 10%;
+        margin: 10px;
+        font-size: 17px;
+        align-items: top;
+    }
+    
+    .cubo3 {
+        border: 1px solid rgb(78, 78, 78);
+        width: 165px;
+        height: 70px;
+        border-radius: 10%;
+        margin: 10px;
+        font-size: 17px;
+        align-items: top;
+    }
+
+        
+    .cubo4 {
+        border: 1px solid rgb(78, 78, 78);
+        width: 165px;
+        height: 70px;
+        border-radius: 10%;
+        margin: 10px;
+        font-size: 17px;
+        align-items: top;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    .Redes{
+        flex-wrap: wrap;
+        display: flex;
+        text-decoration: none;
+        pointer-events: none;
+    }
+  }

@@ -61,15 +61,16 @@ hr {
     align-items: center;
     justify-content: center;
     padding: 10px 20px;
-    background-color: #3e6291;
+    background-color: rgb(178, 178, 179);
     color: white;
     border-radius: 25px;
     text-decoration: none;
+    color: rgb(35, 44, 58);
 
 }
 
 .descargarCv:hover{
-    background-color: #2b5064;
+    background-color: #918e8e;
 }
 
 .Lenguajes, .Herramientas {
@@ -102,7 +103,7 @@ hr {
     color: rgb(88, 180, 255);
     pointer-events:all;
     margin-left: 0px;
-    background-color: rgb(35, 44, 58);
+    background-color: rgb(216, 217, 219);
 }
 
 
@@ -117,7 +118,7 @@ hr {
     text-decoration: none;
     color: rgb(50, 116, 170);
     pointer-events:all;
-    background-color: rgb(35, 44, 58);
+    background-color: rgb(216, 217, 219);
 }
 
 .cubo3 {
@@ -131,7 +132,7 @@ hr {
     text-decoration: none;
     color: rgb(140, 141, 141);
     pointer-events:all;
-    background-color: rgb(35, 44, 58);
+    background-color: rgb(216, 217, 219);
 }
 
 .cubo4 {
@@ -145,7 +146,7 @@ hr {
     text-decoration: none;
     color: rgb(194, 154, 81);
     pointer-events:all;
-    background-color: rgb(35, 44, 58);
+    background-color: rgb(216, 217, 219);
 }
 
 
@@ -162,7 +163,7 @@ a {
 }
 
 .cubo1:hover, .cubo2:hover, .cubo3:hover, .cubo4:hover {
-    background-color: rgb(55, 68, 88); /* Cambia esto al color que prefieras */
+    background-color: rgb(185, 183, 183); /* Cambia esto al color que prefieras */
 }
 
 .smt {
@@ -173,14 +174,14 @@ a {
     display: flex;
     align-items: center;
     padding: 20px;
-    background-color: rgb(35, 44, 58);
+    background-color: rgb(216, 217, 219);
     border-radius: 10px;
     width: 90%;
     margin: 0 auto;
     cursor: pointer;
     margin-left:0px ;
     margin-top: 10px;
-    color: white;
+    color: rgb(35, 44, 58);
   }
 
   .email-address {

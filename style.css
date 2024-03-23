@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 html {
     scrollbar-color: rgb(129, 127, 127) rgb(79, 79, 80);
@@ -75,6 +75,13 @@ hr {
 .Lenguajes, .Herramientas {
     font-size: 15px;
     align-items: center;
+}
+
+.Lenguajes {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    pointer-events: none;
 }
 
 .Redes img {
@@ -372,8 +379,24 @@ a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    height: 40px;
 }
 
 .luna {
     width: 50px;
 }
+
+.languages {
+    width: 90px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.languages img {
+    width: 60px;
+    align-self: center;
+} 

@@ -89,6 +89,9 @@ hr {
     flex-direction: row;
     text-decoration: none;
     pointer-events: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .cubo1 {
@@ -404,4 +407,55 @@ a {
 .languages img {
     width: 60px;
     align-self: center;
-} 
+}
+
+
+@media screen and (max-width: 390px) {
+    .Redes{
+        flex-wrap: wrap;
+        display: flex;
+        text-decoration: none;
+        pointer-events: none;
+    }
+    .cubo1 {
+        border: 1px solid rgb(78, 78, 78);
+        width: 135px;
+        height: 70px;
+        border-radius: 10%;
+        margin: 10px;
+        font-size: 17px;
+        align-items: top;
+    }
+    
+    .cubo2 {
+        border: 1px solid rgb(78, 78, 78);
+        width: 135px;
+        height: 70px;
+        border-radius: 10%;
+        margin: 10px;
+        font-size: 17px;
+        align-items: top;
+    }
+    
+    .cubo3 {
+        border: 1px solid rgb(78, 78, 78);
+        width: 135px;
+        height: 70px;
+        border-radius: 10%;
+        margin: 10px;
+        font-size: 17px;
+        align-items: top;
+    }
+
+    .cubo4 {
+        border: 1px solid rgb(78, 78, 78);
+        width: 140px;
+        height: 70px;
+        border-radius: 10%;
+        margin: 10px;
+        font-size: 16px;
+        align-items: top;
+        color: rgb(194, 154, 81);
+    }
+
+  }

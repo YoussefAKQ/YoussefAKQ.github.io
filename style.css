@@ -20,12 +20,18 @@ body {
 .main {
     width: 100%;
     max-width: 700px;
+    margin-left: 10px;
+    margin-right: 10px ;
+}
+
+.princinom{
+    margin-bottom: 0px;
 }
 
 .perfil{
     flex-direction: row;
     display:flex ;
-    padding: 15px;
+    padding-top: 15px;
 }
 
 
@@ -42,10 +48,12 @@ hr {
     border-radius: 50%;
     border: 10px solid rgb(21, 25, 44);
     margin-right: 5px;
+    
 }
 
 .textoperfil{
     padding: 10px;
+    padding-top:-15px ;
 }
 
 .descargarCv {
@@ -163,7 +171,7 @@ a {
     padding: 20px;
     background-color: #444;
     border-radius: 10px;
-    width: 85%;
+    width: 90%;
     margin: 0 auto;
     cursor: pointer;
     margin-left:0px ;
@@ -299,3 +307,73 @@ a {
     }
 
   }
+
+  @media screen and (max-width: 365px) {
+    .Redes{
+        flex-wrap: wrap;
+        display: flex;
+        text-decoration: none;
+        pointer-events: none;
+    }
+    .cubo1 {
+        border: 1px solid rgb(78, 78, 78);
+        width: 135px;
+        height: 70px;
+        border-radius: 10%;
+        margin: 10px;
+        font-size: 17px;
+        align-items: top;
+    }
+    
+    .cubo2 {
+        border: 1px solid rgb(78, 78, 78);
+        width: 135px;
+        height: 70px;
+        border-radius: 10%;
+        margin: 10px;
+        font-size: 17px;
+        align-items: top;
+    }
+    
+    .cubo3 {
+        border: 1px solid rgb(78, 78, 78);
+        width: 135px;
+        height: 70px;
+        border-radius: 10%;
+        margin: 10px;
+        font-size: 17px;
+        align-items: top;
+    }
+
+    .cubo4 {
+        border: 1px solid rgb(78, 78, 78);
+        width: 135px;
+        height: 70px;
+        border-radius: 10%;
+        margin: 10px;
+        font-size: 15px;
+        align-items: top;
+        color: rgb(194, 154, 81);
+    }
+
+  }
+
+  .barra {
+    overflow: hidden;
+    background-color: rgb(35, 44, 58);
+    top: 0;
+    width: 100%;
+}
+
+.barra a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.luna {
+    width: 50px;
+}

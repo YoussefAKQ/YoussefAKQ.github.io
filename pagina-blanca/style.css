@@ -149,6 +149,12 @@ hr {
     background-color: rgb(216, 217, 219);
 }
 
+.Lenguajes {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    pointer-events: none;
+}
 
 
 a {
@@ -369,6 +375,7 @@ a {
     background-color: rgb(255, 255, 255);
     top: 0;
     width: 100%;
+    height: 60px;
 }
 
 .barra a {
@@ -383,3 +390,18 @@ a {
 .luna {
     width: 45px;
 }
+
+.languages {
+    width: 90px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.languages img {
+    width: 60px;
+    align-self: center;
+} 

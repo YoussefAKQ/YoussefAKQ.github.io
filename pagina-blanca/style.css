@@ -4,7 +4,6 @@ html {
     scrollbar-color: rgb(209, 205, 205) rgb(120, 120, 121);
 }
 
-
 body {
     background-color: white;
     color: rgb(35, 44, 58);
@@ -84,13 +83,95 @@ hr {
     
 }
 
-.Redes {
+.Lenguajes {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    pointer-events: none;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display:inline-block ;
+}
+
+.cubo1 a, .cubo2 a, .cubo3 a {
+    display: inline-block;
+    pointer-events: none;
+}
+
+.cubo1:hover, .cubo2:hover, .cubo3:hover, .cubo4:hover {
+    background-color: rgb(185, 183, 183); /* Cambia esto al color que prefieras */
+}
+
+.smt {
+    margin-bottom: 5px;
+}
+
+.email-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(216, 217, 219);
+    border-radius: 10px;
+    width: 90%;
+    margin: 0 auto;
+    cursor: pointer;
+    margin-left:0px ;
+    margin-top: 10px;
+    color: rgb(35, 44, 58);
+  }
+
+  .email-address {
+    flex-grow: 1;
+  }
+  
+  .barra {
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    top: 0;
+    width: 100%;
+    height: 60px;
+}
+
+.barra a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.luna {
+    width: 45px;
+}
+
+.languages {
+    width: 90px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.languages img {
+    width: 60px;
+    align-self: center;
+}
+
+
+  
+  .Redes {
     display: flex;
     flex-direction: row;
     text-decoration: none;
     pointer-events: none;
     flex-wrap: wrap;
-    justify-content: space-between;
     width: 100%;
 }
 
@@ -152,52 +233,7 @@ hr {
     background-color: rgb(216, 217, 219);
 }
 
-.Lenguajes {
-    display: flex;
-    flex-direction: row;
-    text-decoration: none;
-    pointer-events: none;
-}
-
-
-a {
-    text-decoration: none;
-    color: inherit;
-    display:inline-block ;
-}
-
-.cubo1 a, .cubo2 a, .cubo3 a {
-    display: inline-block;
-    pointer-events: none;
-}
-
-.cubo1:hover, .cubo2:hover, .cubo3:hover, .cubo4:hover {
-    background-color: rgb(185, 183, 183); /* Cambia esto al color que prefieras */
-}
-
-.smt {
-    margin-bottom: 5px;
-}
-
-.email-container {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    background-color: rgb(216, 217, 219);
-    border-radius: 10px;
-    width: 90%;
-    margin: 0 auto;
-    cursor: pointer;
-    margin-left:0px ;
-    margin-top: 10px;
-    color: rgb(35, 44, 58);
-  }
-
-  .email-address {
-    flex-grow: 1;
-  }
-
-  @media screen and (max-width: 650px) {
+@media screen and (max-width: 650px) {
 
     .perfil, .textoperfil, .descargarCv {
         display: flex;
@@ -215,9 +251,7 @@ a {
 
     .cubo1 {
         border: 1px solid rgb(78, 78, 78);
-        width: 165px;
-        height: 70px;
-        border-radius: 10%;
+        border-radius: 10px;
         margin: 10px;
         font-size: 17px;
         align-items: top;
@@ -225,9 +259,7 @@ a {
     
     .cubo2 {
         border: 1px solid rgb(78, 78, 78);
-        width: 165px;
-        height: 70px;
-        border-radius: 10%;
+        border-radius: 10px;
         margin: 10px;
         font-size: 17px;
         align-items: top;
@@ -235,9 +267,7 @@ a {
     
     .cubo3 {
         border: 1px solid rgb(78, 78, 78);
-        width: 165px;
-        height: 70px;
-        border-radius: 10%;
+        border-radius: 10px;
         margin: 10px;
         font-size: 17px;
         align-items: top;
@@ -245,9 +275,7 @@ a {
 
     .cubo4 {
         border: 1px solid rgb(78, 78, 78);
-        width: 165px;
-        height: 70px;
-        border-radius: 10%;
+        border-radius: 10px;
         margin: 10px;
         font-size: 17px;
         align-items: top;
@@ -255,36 +283,13 @@ a {
     }
   }
 
-  @media screen and (max-width: 450px) {
-    .Redes{
-        flex-wrap: wrap;
-        display: flex;
-        text-decoration: none;
-        pointer-events: none;
-    }
-  }
 
-  @media screen and (max-width: 700px) {
-    .Redes{
-        flex-wrap: wrap;
-        display: flex;
-        text-decoration: none;
-        pointer-events: none;
-    }
-  }
-
-  @media screen and (max-width: 375px) {
-    .Redes{
-        flex-wrap: wrap;
-        display: flex;
-        text-decoration: none;
-        pointer-events: none;
-    }
+  @media screen and (max-width: 380px) {
     .cubo1 {
         border: 1px solid rgb(78, 78, 78);
-        width: 145px;
+        width: 300px;
         height: 70px;
-        border-radius: 10%;
+        border-radius: 10px;
         margin: 10px;
         font-size: 17px;
         align-items: top;
@@ -292,9 +297,8 @@ a {
     
     .cubo2 {
         border: 1px solid rgb(78, 78, 78);
-        width: 145px;
-        height: 70px;
-        border-radius: 10%;
+        width: 300px;
+        border-radius: 10px;
         margin: 10px;
         font-size: 17px;
         align-items: top;
@@ -302,9 +306,8 @@ a {
     
     .cubo3 {
         border: 1px solid rgb(78, 78, 78);
-        width: 145px;
-        height: 70px;
-        border-radius: 10%;
+        width: 300px;
+        border-radius: 10px;
         margin: 10px;
         font-size: 17px;
         align-items: top;
@@ -312,302 +315,11 @@ a {
 
     .cubo4 {
         border: 1px solid rgb(78, 78, 78);
-        width: 145px;
-        height: 70px;
-        border-radius: 10%;
+        width: 300px;
+        border-radius: 10px;
         margin: 10px;
-        font-size: 16px;
+        font-size: 17px;
         align-items: top;
         color: rgb(194, 154, 81);
     }
-
   }
-
-  @media screen and (max-width: 365px) {
-    .Redes{
-        flex-wrap: wrap;
-        display: flex;
-        text-decoration: none;
-        pointer-events: none;
-    }
-    .cubo1 {
-        border: 1px solid rgb(78, 78, 78);
-        width: 135px;
-        height: 70px;
-        border-radius: 10%;
-        margin: 10px;
-        font-size: 17px;
-        align-items: top;
-    }
-    
-    .cubo2 {
-        border: 1px solid rgb(78, 78, 78);
-        width: 135px;
-        height: 70px;
-        border-radius: 10%;
-        margin: 10px;
-        font-size: 17px;
-        align-items: top;
-    }
-    
-    .cubo3 {
-        border: 1px solid rgb(78, 78, 78);
-        width: 135px;
-        height: 70px;
-        border-radius: 10%;
-        margin: 10px;
-        font-size: 17px;
-        align-items: top;
-    }
-
-    .cubo4 {
-        border: 1px solid rgb(78, 78, 78);
-        width: 135px;
-        height: 70px;
-        border-radius: 10%;
-        margin: 10px;
-        font-size: 15px;
-        align-items: top;
-        color: rgb(194, 154, 81);
-    }
-
-  }
-
-  .barra {
-    overflow: hidden;
-    background-color: rgb(255, 255, 255);
-    top: 0;
-    width: 100%;
-    height: 60px;
-}
-
-.barra a {
-    float: right;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.luna {
-    width: 45px;
-}
-
-.languages {
-    width: 90px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.languages img {
-    width: 60px;
-    align-self: center;
-}
-
-
-@media screen and (max-width: 390px) {
-    .Redes{
-        flex-wrap: wrap;
-        display: flex;
-        text-decoration: none;
-        pointer-events: none;
-    }
-    .cubo1 {
-        border: 1px solid rgb(78, 78, 78);
-        width: 135px;
-        height: 70px;
-        border-radius: 10%;
-        margin: 10px;
-        font-size: 17px;
-        align-items: top;
-    }
-    
-    .cubo2 {
-        border: 1px solid rgb(78, 78, 78);
-        width: 135px;
-        height: 70px;
-        border-radius: 10%;
-        margin: 10px;
-        font-size: 17px;
-        align-items: top;
-    }
-    
-    .cubo3 {
-        border: 1px solid rgb(78, 78, 78);
-        width: 135px;
-        height: 70px;
-        border-radius: 10%;
-        margin: 10px;
-        font-size: 17px;
-        align-items: top;
-    }
-
-    .cubo4 {
-        border: 1px solid rgb(78, 78, 78);
-        width: 135px;
-        height: 70px;
-        border-radius: 10%;
-        margin: 10px;
-        font-size: 16px;
-        align-items: top;
-        color: rgb(194, 154, 81);
-    }
-
-  }
-
-  @media screen and (max-width: 400px) {
-    .Redes{
-        flex-wrap: wrap;
-        display: flex;
-        text-decoration: none;
-        pointer-events: none;
-    }
-    .cubo1 {
-        border: 1px solid rgb(78, 78, 78);
-        width: 135px;
-        height: 70px;
-        border-radius: 10%;
-        margin: 10px;
-        font-size: 17px;
-        align-items: top;
-    }
-    
-    .cubo2 {
-        border: 1px solid rgb(78, 78, 78);
-        width: 135px;
-        height: 70px;
-        border-radius: 10%;
-        margin: 10px;
-        font-size: 17px;
-        align-items: top;
-    }
-    
-    .cubo3 {
-        border: 1px solid rgb(78, 78, 78);
-        width: 135px;
-        height: 70px;
-        border-radius: 10%;
-        margin: 10px;
-        font-size: 17px;
-        align-items: top;
-    }
-
-    .cubo4 {
-        border: 1px solid rgb(78, 78, 78);
-        width: 135px;
-        height: 70px;
-        border-radius: 10%;
-        margin: 10px;
-        font-size: 16px;
-        align-items: top;
-        color: rgb(194, 154, 81);
-    }
-
-  }
-
-  @media screen and (max-width: 350px) {
-    .Redes{
-        flex-wrap: wrap;
-        display: flex;
-        text-decoration: none;
-        pointer-events: none;
-    }
-    .cubo1 {
-        border: 1px solid rgb(78, 78, 78);
-        width: 135px;
-        height: 70px;
-        border-radius: 10%;
-        margin: 10px;
-        font-size: 17px;
-        align-items: top;
-    }
-    
-    .cubo2 {
-        border: 1px solid rgb(78, 78, 78);
-        width: 135px;
-        height: 70px;
-        border-radius: 10%;
-        margin: 10px;
-        font-size: 17px;
-        align-items: top;
-    }
-    
-    .cubo3 {
-        border: 1px solid rgb(78, 78, 78);
-        width: 135px;
-        height: 70px;
-        border-radius: 10%;
-        margin: 10px;
-        font-size: 17px;
-        align-items: top;
-    }
-
-    .cubo4 {
-        border: 1px solid rgb(78, 78, 78);
-        width: 135px;
-        height: 70px;
-        border-radius: 10%;
-        margin: 10px;
-        font-size: 16px;
-        align-items: top;
-        color: rgb(194, 154, 81);
-    }
-
-  }
-
-  @media screen and (max-width: 320px) {
-    .Redes{
-        flex-wrap: wrap;
-        display: flex;
-        text-decoration: none;
-        pointer-events: none;
-    }
-    .cubo1 {
-        border: 1px solid rgb(78, 78, 78);
-        width: 125px;
-        height: 70px;
-        border-radius: 10%;
-        margin: 10px;
-        font-size: 17px;
-        align-items: top;
-    }
-    
-    .cubo2 {
-        border: 1px solid rgb(78, 78, 78);
-        width: 125px;
-        height: 70px;
-        border-radius: 10%;
-        margin: 10px;
-        font-size: 13px;
-        align-items: top;
-    }
-    
-    .cubo3 {
-        border: 1px solid rgb(78, 78, 78);
-        width: 125px;
-        height: 70px;
-        border-radius: 10%;
-        margin: 10px;
-        font-size: 17px;
-        align-items: top;
-    }
-
-    .cubo4 {
-        border: 1px solid rgb(78, 78, 78);
-        width: 125px;
-        height: 70px;
-        border-radius: 10%;
-        margin: 10px;
-        font-size: 13px;
-        align-items: top;
-        color: rgb(194, 154, 81);
-    }
-
-  }
-
-  

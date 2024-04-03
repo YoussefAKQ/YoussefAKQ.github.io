@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Youssef's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imagenes/fotoguaysinfondo2.png">
+</head>
+<body>
+    <div class="main">
+        <div class="barra">
+            <a href="../index.html"><img src="imagenes/solsinfondo.png" class="luna"></a>
+        </div>
+        <div class="perfil">
+            <img src="imagenes/foto1.png" class="imagenperfil">
+            <div class="textoperfil"> 
+                <h1 class="princinom">Youssef Khalifa</h1>
+                <p>I'm a Software student at IES Vista Alegre, Madrid.</p>
+                <a href="../docs/CvYoussefDAM.pdf" class="descargarCv">Download CV</a>
+            </div>
+        </div>
+        <hr>
+        <div class="aboutme">
+           <h1>About me</h1>
+           I am a student of Multiplatform Application Development.
+           In this degree I learn things like python, java, html, css, mysql and more.
+           <br><br>
+           After doing the degree I would want to continue my studies by doing a specialization course in cybersecurity.
+        </div><br>
+  
+        <h1>Programming Languages</h1>
+        ✍️My coding languages are Python, Java, SQL, HTML and CSS for now.
+        <br><br>
+        <div class="Lenguajes">
+
+            <br><br>
+        <div class="languages"><img src="imagenes/Python-Dark.svg">
+        Python
+        </div>
+        <div class="languages"><img src="imagenes/Java-Dark.svg">
+            Java
+        </div>
+        <div class="languages"><img src="imagenes/MySQL-Dark.svg">
+            SQL
+        </div>
+        <div class="languages"><img src="imagenes/HTML.svg">
+            HTML
+        </div>
+        <div class="languages"><img src="imagenes/CSS.svg">
+            CSS
+        </div>
+    </div><br>
+    <h1>Tools</h1>
+    My tools are MySQL Workbench, Eclipse, VS Code, Linux and Github for now.
+    <br><br>
+    <div class="Lenguajes">
+        <div class="languages"><img src="imagenes/MySQL-Dark.svg">
+            MySQL
+            </div>
+            <div class="languages"><img src="imagenes/Eclipse-Dark.svg">
+                Eclipse
+            </div>
+            <div class="languages"><img src="imagenes/VSCode-Dark.svg">
+                VS Code
+            </div>
+            <div class="languages"><img src="imagenes/Linux-Dark.svg">
+                Linux
+            </div>
+            <div class="languages"><img src="imagenes/Github-Dark.svg">
+                Github
+            </div>
+
+        
+        </div><br>
+         <h1 class="smt">Social Media</h1>
+        <div class="Redes">
+            <a href="https://twitter.com/YoussefAKQ"><div class="cubo1"><img src="imagenes/Twitter.svg"><br>Twitter</div></a>
+            <a href="https://www.linkedin.com/in/youssef-alexander-khalifa-quispe-622a6b2bb/"><div class="cubo2"><img src="imagenes/LinkedIn.svg"><br>LinkedIN</div></a>
+            <a href="https://github.com/YoussefAKQ"><div class="cubo3"><img src="imagenes/Github-Dark.svg"><br>Github</div></a>
+            <a href="https://www.instagram.com/youssefakq/"><div class="cubo4"><img src="imagenes/Instagram.svg"><br>Instagram</div></a>
+        </div>
+         <h1 class="smt">Email</h1>
+        <div class="email-container" onclick="copyToClipboard('youssefdam2023@gmail.com')">
+            <div class="email-address">youssefdam2023@gmail.com</div>
+        </div>
+        <script>
+            function copyToClipboard(text) {
+              var textarea = document.createElement("textarea");
+              textarea.textContent = text;
+              textarea.style.position = "fixed";  // Prevent scrolling to bottom of page in MS Edge.
+              document.body.appendChild(textarea);
+              textarea.select();
+              try {
+                document.execCommand("copy");  // Security exception may be thrown by some browsers.
+                alert('Correo electrónico copiado al portapapeles');
+              } catch (ex) {
+                console.warn("Copy to clipboard failed.", ex);
+                return false;
+              } finally {
+                document.body.removeChild(textarea);
+              }
+            }
+            </script>
+    </div>
+</body>
+</html>

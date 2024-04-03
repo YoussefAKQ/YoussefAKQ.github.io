@@ -490,8 +490,6 @@ a {
     align-self: center;
 }
 
-
-  
   .Redes {
     display: flex;
     flex-direction: row;
@@ -515,7 +513,6 @@ a {
     margin-left: 0px;
     background-color: rgb(216, 217, 219);
 }
-
 
 .cubo2 {
     border: 1px solid rgb(78, 78, 78);

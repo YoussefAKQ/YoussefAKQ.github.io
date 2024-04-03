@@ -1,12 +1,13 @@
  @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 html {
-    scrollbar-color: rgb(209, 205, 205) rgb(120, 120, 121);
+    scrollbar-color: rgb(129, 127, 127) rgb(79, 79, 80);
 }
 
+
 body {
-    background-color: white;
-    color: rgb(35, 44, 58);
+    background-color: rgb(35, 44, 58);
+    color: #ffffff;
     font-family: "Plus Jakarta Sans", sans-serif;
     overflow-x: hidden;
     display: flex;
@@ -45,7 +46,7 @@ hr {
     height: 175px;
     align-items: left;
     border-radius: 50%;
-    border: 10px solid rgb(91, 92, 94);
+    border: 10px solid rgb(21, 25, 44);
     margin-right: 5px;
     
 }
@@ -60,27 +61,20 @@ hr {
     align-items: center;
     justify-content: center;
     padding: 10px 20px;
-    background-color: rgb(178, 178, 179);
+    background-color: #3e6291;
     color: white;
     border-radius: 25px;
     text-decoration: none;
-    color: rgb(35, 44, 58);
 
 }
 
 .descargarCv:hover{
-    background-color: #918e8e;
+    background-color: #2b5064;
 }
 
 .Lenguajes, .Herramientas {
     font-size: 15px;
     align-items: center;
-}
-
-.Redes img {
-    width: 40px;
-    padding: 11px;
-    
 }
 
 .Lenguajes {
@@ -90,6 +84,11 @@ hr {
     pointer-events: none;
 }
 
+.Redes img {
+    width: 40px;
+    padding: 11px;
+    
+}
 
 a {
     text-decoration: none;
@@ -103,7 +102,7 @@ a {
 }
 
 .cubo1:hover, .cubo2:hover, .cubo3:hover, .cubo4:hover {
-    background-color: rgb(185, 183, 183); /* Cambia esto al color que prefieras */
+    background-color: rgb(55, 68, 88); /* Cambia esto al color que prefieras */
 }
 
 .smt {
@@ -114,22 +113,56 @@ a {
     display: flex;
     align-items: center;
     padding: 20px;
-    background-color: rgb(216, 217, 219);
+    background-color: #444;
     border-radius: 10px;
     width: 90%;
     margin: 0 auto;
     cursor: pointer;
     margin-left:0px ;
     margin-top: 10px;
-    color: rgb(35, 44, 58);
   }
 
   .email-address {
     flex-grow: 1;
   }
 
-  
-  .Redes {
+  .barra {
+    overflow: hidden;
+    background-color: rgb(35, 44, 58);
+    top: 0;
+    width: 100%;
+}
+
+.barra a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    height: 40px;
+}
+
+.luna {
+    width: 50px;
+}
+
+.languages {
+    width: 90px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.languages img {
+    width: 60px;
+    align-self: center;
+}
+
+.Redes {
     display: flex;
     flex-direction: row;
     text-decoration: none;
@@ -137,6 +170,7 @@ a {
     flex-wrap: wrap;
     width: 100%;
 }
+
 
 .cubo1 {
     border: 1px solid rgb(78, 78, 78);
@@ -150,7 +184,6 @@ a {
     color: rgb(88, 180, 255);
     pointer-events:all;
     margin-left: 0px;
-    background-color: rgb(216, 217, 219);
 }
 
 
@@ -165,7 +198,6 @@ a {
     text-decoration: none;
     color: rgb(50, 116, 170);
     pointer-events:all;
-    background-color: rgb(216, 217, 219);
 }
 
 .cubo3 {
@@ -179,7 +211,6 @@ a {
     text-decoration: none;
     color: rgb(140, 141, 141);
     pointer-events:all;
-    background-color: rgb(216, 217, 219);
 }
 
 .cubo4 {
@@ -193,7 +224,6 @@ a {
     text-decoration: none;
     color: rgb(194, 154, 81);
     pointer-events:all;
-    background-color: rgb(216, 217, 219);
 }
 
 @media screen and (max-width: 650px) {
@@ -286,39 +316,3 @@ a {
         color: rgb(194, 154, 81);
     }
   }
-
-  .barra {
-    overflow: hidden;
-    background-color: rgb(255, 255, 255);
-    top: 0;
-    width: 100%;
-    height: 60px;
-}
-
-.barra a {
-    float: right;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.luna {
-    width: 45px;
-}
-
-.languages {
-    width: 90px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.languages img {
-    width: 60px;
-    align-self: center;
-}

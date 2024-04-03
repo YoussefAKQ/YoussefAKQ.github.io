@@ -96,7 +96,7 @@ hr {
     text-decoration: none;
     pointer-events: none;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 100%;
 }
 

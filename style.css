@@ -171,7 +171,6 @@ a {
     width: 100%;
 }
 
-
 .cubo1 {
     border: 1px solid rgb(78, 78, 78);
     width: 150px;
@@ -185,7 +184,6 @@ a {
     pointer-events:all;
     margin-left: 0px;
 }
-
 
 .cubo2 {
     border: 1px solid rgb(78, 78, 78);

@@ -248,6 +248,30 @@ a {
         margin-top: 15px;
     }
 
+    .languages img {
+        width: 40px;
+        height: 40px;
+    }
+
+    #vb1 {
+        width: 33px;
+        height: 33px;
+    }
+
+    #vb2 {
+        width: 33px;
+        height: 33px;
+    }
+
+    #as1 {
+        width: 33px;
+        height: 33px;
+    }
+
+    .languages {
+        font-size: 13px;
+    }
+
     .cubo1 {
         border: 1px solid rgb(78, 78, 78);
         border-radius: 10px;

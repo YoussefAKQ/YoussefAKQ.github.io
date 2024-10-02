@@ -148,7 +148,7 @@ a {
 }
 
 .languages {
-    width: 90px;
+    width: 40px;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -230,6 +230,30 @@ a {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .languages img {
+        width: 40px;
+        height: 40px;
+    }
+
+    #vb1 {
+        width: 33px;
+        height: 33px;
+    }
+
+    #vb2 {
+        width: 33px;
+        height: 33px;
+    }
+
+    #as1 {
+        width: 33px;
+        height: 33px;
+    }
+
+    .languages {
+        font-size: 12px;
     }
 
     .textoperfil {

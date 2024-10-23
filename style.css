@@ -315,6 +315,24 @@ a {
     
   }
 
+  @media screen and (max-width: 407px) {
+    .Lenguajes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        text-decoration: none;
+        pointer-events: none;
+    }
+    
+    .Lenguajes > * { 
+        flex: 1 1 75px; 
+        max-width: 75px; 
+        margin: 2px; 
+    }
+  }
+    
+  
+
 
   @media screen and (max-width: 380px) {
     .cubo1 {

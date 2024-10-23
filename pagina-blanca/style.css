@@ -304,6 +304,21 @@ a {
         align-items: top;
         color: rgb(194, 154, 81);
     }
+
+    
+    .Lenguajes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        text-decoration: none;
+        pointer-events: none;
+    }
+    
+    .Lenguajes > * { 
+        flex: 1 1 120px; 
+        max-width: 120px; 
+        margin: 2px; 
+    }
   }
 
 

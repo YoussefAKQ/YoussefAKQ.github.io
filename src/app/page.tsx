@@ -6,7 +6,7 @@ export default function Home() {
     <main className="relative flex min-h-screen flex-col py-4 md:py-6 items-center justify-center p-10">
       <div className="container max-w-3xl flex-1">
         <nav className="container sticky top-0 z-50 mb-1 flex w-full max-w-4xl items-center justify-between bg-neutral-100/80 py-4 backdrop-blur-md dark:bg-neutral-900/80">
-          <a href="https://youssefakq.github.io/index.html">YoussefAKQ</a>
+          <a href="https://youssefportfolio-rouge.vercel.app">YoussefAKQ</a>
           <div className="flex items-center space-x-3">
             <a
               href="https://github.com/YoussefAKQ"

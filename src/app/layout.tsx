@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: "YoussefAKQ's Portfolio",
   description: "Portofolio de Youssef Alexander",
   icons: {
-    icon: "./public/images/iconoy.jpg",
+    icon: "/images/icono.jpg",
   },
 };
 

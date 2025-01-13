@@ -37,7 +37,7 @@ export default function Home() {
 
         <div className="container max-w-4xl flex-1">
           <b className="text-xl">Sobre mí</b>
-          <p className="mt-4">
+          <p className="mt-4 text-sm">
             Hey! Soy Youssef. Tengo 20 años y estoy estudiando programación. Actualmente, estoy en mi segundo año de un ciclo superior de Desarrollo de Aplicaciones en Madrid, España.
           </p>
         </div>
@@ -74,6 +74,42 @@ export default function Home() {
               </Card>
             </div>
             
+          </div>
+        </div>
+        <div className="container max-w-4xl flex-1 flex flex-col space-y-4 delay-100 duration-500 animate-in fade-in slide-in-from-bottom-4 fill-mode-backwards">
+          <br />
+          <b className="text-xl">Skills</b>
+          <div className="grid grid-cols-2 gap-3 md:grid-cols-2">
+          <div className="text-sm items-center justify-center relative flex flex-col rounded-md border-[1px] border-neutral-300 px-2 py-2 shadow-sm dark:border-neutral-800 hover:bg-neutral-200 hover:text-neutral-900 dark:hover:bg-neutral-800 dark:hover:text-neutral-50">
+              Java
+            </div>
+            <div className="text-sm items-center justify-center relative flex flex-col rounded-md border-[1px] border-neutral-300 px-2 py-2 shadow-sm dark:border-neutral-800 hover:bg-neutral-200 hover:text-neutral-900 dark:hover:bg-neutral-800 dark:hover:text-neutral-50">
+              Python
+            </div>
+            <div className="text-sm items-center justify-center relative flex flex-col rounded-md border-[1px] border-neutral-300 px-2 py-2 shadow-sm dark:border-neutral-800 hover:bg-neutral-200 hover:text-neutral-900 dark:hover:bg-neutral-800 dark:hover:text-neutral-50">
+              MySQL
+            </div>
+            <div className="text-sm items-center justify-center relative flex flex-col rounded-md border-[1px] border-neutral-300 px-2 py-2 shadow-sm dark:border-neutral-800 hover:bg-neutral-200 hover:text-neutral-900 dark:hover:bg-neutral-800 dark:hover:text-neutral-50">
+              React Native
+            </div>
+            <div className="text-sm items-center justify-center relative flex flex-col rounded-md border-[1px] border-neutral-300 px-2 py-2 shadow-sm dark:border-neutral-800 hover:bg-neutral-200 hover:text-neutral-900 dark:hover:bg-neutral-800 dark:hover:text-neutral-50">
+              Android Studio - Java
+            </div>
+            <div className="text-sm items-center justify-center relative flex flex-col rounded-md border-[1px] border-neutral-300 px-2 py-2 shadow-sm dark:border-neutral-800 hover:bg-neutral-200 hover:text-neutral-900 dark:hover:bg-neutral-800 dark:hover:text-neutral-50">
+              Visual Basic .NET
+            </div>
+            <div className="text-sm items-center justify-center relative flex flex-col rounded-md border-[1px] border-neutral-300 px-2 py-2 shadow-sm dark:border-neutral-800 hover:bg-neutral-200 hover:text-neutral-900 dark:hover:bg-neutral-800 dark:hover:text-neutral-50">
+              HTML + CSS
+            </div>
+            <div className="text-sm items-center justify-center relative flex flex-col rounded-md border-[1px] border-neutral-300 px-2 py-2 shadow-sm dark:border-neutral-800 hover:bg-neutral-200 hover:text-neutral-900 dark:hover:bg-neutral-800 dark:hover:text-neutral-50">
+              JavaScript
+            </div>
+            <div className="text-sm items-center justify-center relative flex flex-col rounded-md border-[1px] border-neutral-300 px-2 py-2 shadow-sm dark:border-neutral-800 hover:bg-neutral-200 hover:text-neutral-900 dark:hover:bg-neutral-800 dark:hover:text-neutral-50">
+              Git
+            </div>
+            <div className="text-sm items-center justify-center relative flex flex-col rounded-md border-[1px] border-neutral-300 px-2 py-2 shadow-sm dark:border-neutral-800 hover:bg-neutral-200 hover:text-neutral-900 dark:hover:bg-neutral-800 dark:hover:text-neutral-50">
+              NextJS
+            </div>
           </div>
         </div>
       </div>

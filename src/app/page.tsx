@@ -62,9 +62,9 @@ export default function Home() {
                   </div>
                 </CardHeader>
 
-                <CardBody className="p-2 text-sm">
+                <CardBody className="p-2 text-xs sm:text-sm">
                   <p>
-                    SmartCart es una app para planificar compras, encontrar opciones económicas y recibir recomendaciones de recetas hecha en React Native
+                  SmartCart: App para planificar compras, encontrar opciones económicas y recibir recomendaciones de recetas (React Native).
                   </p>
                 </CardBody>
 

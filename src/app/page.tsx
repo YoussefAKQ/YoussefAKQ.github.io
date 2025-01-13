@@ -113,6 +113,13 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <footer className="container mt-10 flex items-center max-w-4xl flex-col items-center justify-center space-y-1 md:flex-col md:items-center md:justify-center md:space-y-1">
+        <div className="flex items-center space-x-1 text-sm md:text-md">
+            <h2>YoussefAKQ</h2>
+            <span className="text-gray-500 dark:text-gray-400">-</span>
+            <p>2025</p>
+        </div>
+      </footer>
     </main>
   );
 }

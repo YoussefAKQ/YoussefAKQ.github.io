@@ -104,7 +104,18 @@ export default function Home() {
             <div className="text-xs md:text-sm text-sm items-center justify-center relative flex flex-col rounded-md border-[1px] border-neutral-300 px-2 py-2 shadow-sm dark:border-neutral-800 hover:bg-neutral-200 hover:text-neutral-900 dark:hover:bg-neutral-800 dark:hover:text-neutral-50">
               CSS
             </div>
-            
+            <div className="text-xs md:text-sm text-sm items-center justify-center relative flex flex-col rounded-md border-[1px] border-neutral-300 px-2 py-2 shadow-sm dark:border-neutral-800 hover:bg-neutral-200 hover:text-neutral-900 dark:hover:bg-neutral-800 dark:hover:text-neutral-50">
+              JavaScript
+            </div>
+            <div className="text-xs md:text-sm text-sm items-center justify-center relative flex flex-col rounded-md border-[1px] border-neutral-300 px-2 py-2 shadow-sm dark:border-neutral-800 hover:bg-neutral-200 hover:text-neutral-900 dark:hover:bg-neutral-800 dark:hover:text-neutral-50">
+              NextJS
+            </div>
+            <div className="text-xs md:text-sm text-sm items-center justify-center relative flex flex-col rounded-md border-[1px] border-neutral-300 px-2 py-2 shadow-sm dark:border-neutral-800 hover:bg-neutral-200 hover:text-neutral-900 dark:hover:bg-neutral-800 dark:hover:text-neutral-50">
+              Tailwind
+            </div>
+            <div className="text-xs md:text-sm text-sm items-center justify-center relative flex flex-col rounded-md border-[1px] border-neutral-300 px-2 py-2 shadow-sm dark:border-neutral-800 hover:bg-neutral-200 hover:text-neutral-900 dark:hover:bg-neutral-800 dark:hover:text-neutral-50">
+              Git
+            </div>
           </div>
         </div>
       </div>

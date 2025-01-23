@@ -78,7 +78,7 @@ export default function Home() {
         </div>
         <div className="container max-w-4xl flex-1 flex flex-col space-y-4 delay-100 duration-500 animate-in fade-in slide-in-from-bottom-4 fill-mode-backwards">
           <br />
-          <b className="text-xl">Skills</b>
+          <b className="text-xl">Skills princpales</b>
           <div className="grid grid-cols-2 gap-3 md:grid-cols-3 ">
           <div className="text-xs md:text-sm text-sm items-center justify-center relative flex flex-col rounded-md border-[1px] border-neutral-300 px-2 py-2 shadow-sm dark:border-neutral-800 hover:bg-neutral-200 hover:text-neutral-900 dark:hover:bg-neutral-800 dark:hover:text-neutral-50">
               Java
@@ -90,19 +90,28 @@ export default function Home() {
               MySQL
             </div>
             <div className="text-xs md:text-sm text-sm items-center justify-center relative flex flex-col rounded-md border-[1px] border-neutral-300 px-2 py-2 shadow-sm dark:border-neutral-800 hover:bg-neutral-200 hover:text-neutral-900 dark:hover:bg-neutral-800 dark:hover:text-neutral-50">
-              React Native
+              HTML
             </div>
             <div className="text-xs md:text-sm text-sm items-center justify-center relative flex flex-col rounded-md border-[1px] border-neutral-300 px-2 py-2 shadow-sm dark:border-neutral-800 hover:bg-neutral-200 hover:text-neutral-900 dark:hover:bg-neutral-800 dark:hover:text-neutral-50">
-              Android Studio Java
+              CSS
+            </div>
+            <div className="text-xs md:text-sm text-sm items-center justify-center relative flex flex-col rounded-md border-[1px] border-neutral-300 px-2 py-2 shadow-sm dark:border-neutral-800 hover:bg-neutral-200 hover:text-neutral-900 dark:hover:bg-neutral-800 dark:hover:text-neutral-50">
+              Git
+            </div>
+          </div>
+        </div>
+        <div className="container max-w-4xl flex-1 flex flex-col space-y-4 delay-100 duration-500 animate-in fade-in slide-in-from-bottom-4 fill-mode-backwards">
+          <br />
+          <b className="text-xl">Skills en aprendizaje</b>
+          <div className="grid grid-cols-2 gap-3 md:grid-cols-3 ">
+            <div className="text-xs md:text-sm text-sm items-center justify-center relative flex flex-col rounded-md border-[1px] border-neutral-300 px-2 py-2 shadow-sm dark:border-neutral-800 hover:bg-neutral-200 hover:text-neutral-900 dark:hover:bg-neutral-800 dark:hover:text-neutral-50">
+              React Native
             </div>
             <div className="text-xs md:text-sm text-sm items-center justify-center relative flex flex-col rounded-md border-[1px] border-neutral-300 px-2 py-2 shadow-sm dark:border-neutral-800 hover:bg-neutral-200 hover:text-neutral-900 dark:hover:bg-neutral-800 dark:hover:text-neutral-50">
               Visual Basic .NET
             </div>
             <div className="text-xs md:text-sm text-sm items-center justify-center relative flex flex-col rounded-md border-[1px] border-neutral-300 px-2 py-2 shadow-sm dark:border-neutral-800 hover:bg-neutral-200 hover:text-neutral-900 dark:hover:bg-neutral-800 dark:hover:text-neutral-50">
-              HTML
-            </div>
-            <div className="text-xs md:text-sm text-sm items-center justify-center relative flex flex-col rounded-md border-[1px] border-neutral-300 px-2 py-2 shadow-sm dark:border-neutral-800 hover:bg-neutral-200 hover:text-neutral-900 dark:hover:bg-neutral-800 dark:hover:text-neutral-50">
-              CSS
+              Android Studio Java
             </div>
             <div className="text-xs md:text-sm text-sm items-center justify-center relative flex flex-col rounded-md border-[1px] border-neutral-300 px-2 py-2 shadow-sm dark:border-neutral-800 hover:bg-neutral-200 hover:text-neutral-900 dark:hover:bg-neutral-800 dark:hover:text-neutral-50">
               JavaScript
@@ -112,9 +121,6 @@ export default function Home() {
             </div>
             <div className="text-xs md:text-sm text-sm items-center justify-center relative flex flex-col rounded-md border-[1px] border-neutral-300 px-2 py-2 shadow-sm dark:border-neutral-800 hover:bg-neutral-200 hover:text-neutral-900 dark:hover:bg-neutral-800 dark:hover:text-neutral-50">
               Tailwind
-            </div>
-            <div className="text-xs md:text-sm text-sm items-center justify-center relative flex flex-col rounded-md border-[1px] border-neutral-300 px-2 py-2 shadow-sm dark:border-neutral-800 hover:bg-neutral-200 hover:text-neutral-900 dark:hover:bg-neutral-800 dark:hover:text-neutral-50">
-              Git
             </div>
           </div>
         </div>

@@ -25,4 +25,17 @@
   scroll-behavior: smooth;
 }
 
+/* Cursor light effect */
+.cursor-light {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(177, 177, 188, 0.15), transparent 60%);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  transition: opacity 0.3s ease;
+}
+
 

@@ -7,6 +7,7 @@ import { FaXTwitter } from 'react-icons/fa6';
 
 function App() {
   const [activeSection, setActiveSection] = useState('about');
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
@@ -39,8 +40,24 @@ function App() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      setMousePosition({ x: e.clientX, y: e.clientY });
+    };
+
+    window.addEventListener('mousemove', handleMouseMove);
+    return () => window.removeEventListener('mousemove', handleMouseMove);
+  }, []);
+
   return (
     <>
+      <div 
+        className="cursor-light" 
+        style={{ 
+          left: `${mousePosition.x}px`, 
+          top: `${mousePosition.y}px` 
+        }} 
+      />
       <div className="min-w-[320px] max-w-[1200px] mx-auto flex flex-col md:flex-row gap-8 md:gap-0 mt-10 md:mt-20 mb-10 md:mb-20 px-6 md:px-4">
         <div className="w-full md:w-1/2">
           <div className="md:sticky md:top-20 md:h-[calc(100vh-10rem)] flex flex-col justify-between">

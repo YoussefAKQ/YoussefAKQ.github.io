@@ -1,10 +1,10 @@
 const ProjectItem = ({ title, description, image, skills, link }) => {
   return (
-    <div className='flex flex-row gap-6 hover:bg-white/10 p-4 rounded-lg transition duration-125 ease-in-out'>
+    <div className='group flex flex-row gap-6 hover:bg-white/10 p-4 rounded-lg transition duration-125 ease-in-out'>
       <img 
         src={image} 
         alt={title} 
-        className="w-48 h-auto object-contain rounded-lg flex-shrink-0" 
+        className="w-48 h-28 h-auto aspect-video object-cover rounded-xl border-2 border-slate-200/10 transition group-hover:border-slate-200/30 flex-shrink-0" 
       />
       <div className='space-y-2'>
         <h3 className='text-xl font-bold'>{title}</h3>

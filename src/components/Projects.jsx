@@ -3,12 +3,19 @@ import ProjectItem from './ProjectItem';
 const Projects = () => {
   const projects = [
     {
-      title: "Portfolio Personal",
-      description: "Mi sitio web personal construido con React y Tailwind CSS",
-      image: "/src/assets/prueba1.png",
-      skills: ["React", "Tailwind", "Vite"],
-      link: "https://github.com/yourusername/portfolio"
-    }
+      title: "SmartCart",
+      description: "Application in React Native for managing purchases and recipes.",  
+      image: "/src/assets/smartcart.png",
+      skills: ["React Native", "JavaScript", "CSS"],
+      link: "https://github.com/YoussefAKQ/SmartCart"
+    },
+    {
+        title: "Bamp",
+        description: "I contributed to the development of Bamp, a web application for sending and managing school reports.",
+        image: "/src/assets/bamp.png",
+        skills: ["NextJS", "JavaScript", "TailwindCSS"],
+        link: "https://bampresearch.com"
+      }
   ];
 
   return (

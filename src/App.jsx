@@ -14,9 +14,9 @@ function App() {
               <h3 className="text-xl font-semibold mt-2">Junior Developer</h3>
               <p className="mt-6 max-w-[300px]">I enjoy building websites and applications and learning new technologies. </p>
               <div className="space-y-4 flex flex-col mt-8">
-                <a href="#about" className="text-blue-500 hover:underline">About</a>
-                <a href="#experience" className="text-blue-500 hover:underline">Experience</a>
-                <a href="#projects" className="text-blue-500 hover:underline">Projects</a>
+                <a href="#about" className="text-blue-500 hover:underline">ABOUT</a>
+                <a href="#experience" className="text-blue-500 hover:underline">EXPERIENCE</a>
+                <a href="#projects" className="text-blue-500 hover:underline">PROJECTS</a>
               </div>
             </div>
             
@@ -28,7 +28,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="w-1/2 max-w-[500px]">
+        <div className="w-1/2 max-w-[600px]">
           <section id='about' className='space-y-4'>
             <p>I'm a developer passionate about creating user-friendly experiences. Currently, I'm in an internship and looking for new opportunities.</p>
             <p>Currently open for new challenges.</p>

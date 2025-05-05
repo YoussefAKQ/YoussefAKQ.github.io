@@ -4,8 +4,8 @@ const Experience = () => {
   const experiences = [
     {
       date: "2025 - PRESENT",
-      title: "Intern at Atisa",
-      description: "Worked on various projects involving web development and design.",
+      title: "Junior Developer Intern at Atisa",
+      description: "Worked on various projects involving web development, software development, and database management. Gained experience in collaborating with a team and using version control systems.",
       skills: ["HTML", "CSS", "JavaScript"]
     }
   ];

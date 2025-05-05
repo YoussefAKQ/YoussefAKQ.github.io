@@ -9,9 +9,9 @@ const ProjectItem = ({ title, description, image, skills, link }) => {
       <div className='space-y-2'>
         <h3 className='text-xl font-bold'>{title}</h3>
         <p>{description}</p>
-        <div className='flex flex-row gap-2 mt-2'>
+        <div className='flex flex-wrap gap-2 mt-2'>
           {skills.map((skill, index) => (
-            <span key={index} className='text-sm text-gray-500'>{skill}</span>
+            <span key={index} className='text-sm text-gray-500 bg-white/5 px-2 py-1 rounded'>{skill}</span>
           ))}
         </div>
         {link && (

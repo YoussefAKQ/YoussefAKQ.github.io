@@ -5,9 +5,9 @@ const ExperienceItem = ({ date, title, description, skills }) => {
       <div className='max-w-[350px] space-y-2'>
         <p className='text-xl font-bold'>{title}</p>
         <p>{description}</p>
-        <div className='flex flex-row gap-3 mt-2'>
+        <div className='flex flex-wrap gap-2 mt-2'>
           {skills.map((skill, index) => (
-            <p key={index} className='text-sm text-gray-500'>{skill}</p>
+            <p key={index} className='text-sm text-gray-500 bg-white/5 px-2 py-1 rounded'>{skill}</p>
           ))}
         </div>
       </div>

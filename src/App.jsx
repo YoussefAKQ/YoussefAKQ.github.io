@@ -97,7 +97,7 @@ function App() {
           </div>
         </div>
         <div className="w-1/2 max-w-[600px]">
-          <section id='about' className='space-y-5 text-gray-400 text-1xl'>
+          <section id='about' className='space-y-6 text-gray-400 text-1xl'>
             <p>I'm 20 years old and a <span className='text-white'>software development student</span>. Currently, I'm in my second year of an advanced degree in Application Development in Madrid, Spain.</p>
             <p>In my first year, I studied <span className='text-white'>SQL with MySQL, Java in Eclipse, Python in IDLE, Linux with VirtualBox, HTML, CSS, XML, and gained exposure to Oracle DB</span>, among other topics. In my second year, I’ve studied <span className='text-white'>Visual Basic .NET, Java in Android Studio, Data Access with Java, Odoo on AWS, Python, video game development with libGDX in Java</span>, and much more.</p>
             <p>Additionally, I’ve self-studied <span className='text-white'>JavaScript, React Native, Tailwind, Git, and Next.js</span> to further expand my skill set.</p>

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Experience from './components/Experience';
+import Projects from './components/Projects';
 import './App.css';
 
 function App() {
@@ -33,9 +34,7 @@ function App() {
             <p>Currently open for new challenges.</p>
           </section>
           <Experience />
-          <section id='projects' className='space-y-4'>
-            
-          </section>
+          <Projects />
         </div>
       </div>
     </>

@@ -17,7 +17,7 @@ const ProjectItem = ({ title, description, image, skills, link }) => {
         {link && (
           <a href={link} target="_blank" rel="noopener noreferrer" 
              className="inline-block mt-4 text-blue-500 hover:underline">
-            Ver proyecto →
+            Watch Project →
           </a>
         )}
       </div>

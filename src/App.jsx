@@ -1,10 +1,11 @@
 import { useState } from 'react';
+import Experience from './components/Experience';
 import './App.css';
 
 function App() {
   return (
     <>
-      <div className="flex gap-10 mt-20 mb-20">
+      <div className="flex gap-0 mt-20 mb-20">
         <div className="w-1/2">
           <div className="sticky top-20 h-[calc(100vh-10rem)] flex flex-col justify-between">
             <div>
@@ -27,26 +28,11 @@ function App() {
           </div>
         </div>
         <div className="w-1/2 max-w-[500px]">
-        <section id='about' className='space-y-4'>
+          <section id='about' className='space-y-4'>
             <p>I'm a developer passionate about creating user-friendly experiences. Currently, I'm in an internship and looking for new opportunities.</p>
             <p>Currently open for new challenges.</p>
           </section>
-          <section id='experience' className='space-y-4 mt-28'>
-            <div className='flex flex-col gap-4'>
-              <div className='flex flex-row gap-4 justify-between'>
-                <p>2025 - PRESENT</p>
-                <div className='max-w-[300px] space-y-2'>
-                  <p className='text-2xl font-bold'>Intern at Atisa</p>
-                  <p className=''>Worked on various projects involving web development and design.</p>
-                  <div className='flex flex-row gap-2 mt-2'>
-                    <p className='text-sm text-gray-500'>HTML</p>
-                    <p className='text-sm text-gray-500'>CSS</p>
-                    <p className='text-sm text-gray-500'>JavaScript</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+          <Experience />
           <section id='projects' className='space-y-4'>
             
           </section>

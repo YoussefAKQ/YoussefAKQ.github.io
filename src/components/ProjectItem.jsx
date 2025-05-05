@@ -5,7 +5,7 @@ const ProjectItem = ({ title, description, image, skills, link }) => {
         <img 
           src={image} 
           alt={title} 
-          className="md:-mt-4 -mt-2 w-full h-full object-contain rounded-2xl border-2 border-slate-200/10 transition group-hover:border-slate-200/30" 
+          className="md:-mt-4 -mt-2 w-full h-full object-contain rounded-3xl border-2 border-slate-200/10 transition group-hover:border-slate-200/30" 
         />
       </div>
       <div className='space-y-2 flex-grow min-w-0'>

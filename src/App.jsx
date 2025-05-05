@@ -3,6 +3,7 @@ import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
 import './App.css';
+import { FaXTwitter } from 'react-icons/fa6';
 
 function App() {
   const scrollToSection = (sectionId) => {
@@ -54,7 +55,7 @@ function App() {
               </a>
               <a href="https://twitter.com/YoussefAKQ" target="_blank" rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white">
-                <FaTwitter className="w-6 h-6" />
+                <FaXTwitter className="w-6 h-6" />
               </a>
               <a href="https://instagram.com/YoussefAKQ" target="_blank" rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white">

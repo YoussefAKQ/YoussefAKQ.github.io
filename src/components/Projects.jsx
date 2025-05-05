@@ -15,6 +15,20 @@ const Projects = () => {
         image: "/src/assets/bamp.png",
         skills: ["NextJS", "JavaScript", "TailwindCSS"],
         link: "https://bampresearch.com"
+      },
+      {
+          title: "Bamp",
+          description: "I contributed to the development of Bamp, a web application for sending and managing school reports.",
+          image: "/src/assets/bamp.png",
+          skills: ["NextJS", "JavaScript", "TailwindCSS"],
+          link: "https://bampresearch.com"
+      },
+      {
+        title: "Bamp",
+        description: "I contributed to the development of Bamp, a web application for sending and managing school reports.",
+        image: "/src/assets/bamp.png",
+        skills: ["NextJS", "JavaScript", "TailwindCSS"],
+        link: "https://bampresearch.com"
       }
   ];
 

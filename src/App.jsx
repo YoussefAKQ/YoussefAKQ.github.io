@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
@@ -6,6 +6,8 @@ import './App.css';
 import { FaXTwitter } from 'react-icons/fa6';
 
 function App() {
+  const [activeSection, setActiveSection] = useState('about');
+
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -13,8 +15,29 @@ function App() {
         behavior: 'smooth',
         block: 'start',
       });
+      setActiveSection(sectionId);
     }
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = ['about', 'experience', 'projects'];
+      const currentSection = sections.find(section => {
+        const element = document.getElementById(section);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          return rect.top >= 0 && rect.top <= 300;
+        }
+        return false;
+      });
+      if (currentSection) {
+        setActiveSection(currentSection);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <>
@@ -26,21 +49,30 @@ function App() {
               <h3 className="text-xl font-semibold mt-2">Junior Developer</h3>
               <p className="mt-6 max-w-[300px]">I enjoy building websites and applications and learning new technologies. </p>
               <div className="space-y-4 flex flex-col mt-14">
-                <button 
-                  onClick={() => scrollToSection('about')} 
-                  className="text-white hover:text-gray-400 text-left focus:outline-none border-none bg-transparent cursor-pointer">
-                  ABOUT
-                </button>
-                <button 
-                  onClick={() => scrollToSection('experience')} 
-                  className="text-white hover:text-gray-400 text-left focus:outline-none border-none bg-transparent cursor-pointer">
-                  EXPERIENCE
-                </button>
-                <button 
-                  onClick={() => scrollToSection('projects')} 
-                  className="text-white hover:text-gray-400 text-left focus:outline-none border-none bg-transparent cursor-pointer">
-                  PROJECTS
-                </button>
+                <div className="flex items-center gap-2">
+                  <div className={`h-[1px] bg-white transition-all duration-300 ${activeSection === 'about' ? 'w-8' : 'w-4'}`} />
+                  <button 
+                    onClick={() => scrollToSection('about')} 
+                    className="text-white hover:text-gray-400 text-left focus:outline-none border-none bg-transparent cursor-pointer">
+                    ABOUT
+                  </button>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className={`h-[1px] bg-white transition-all duration-300 ${activeSection === 'experience' ? 'w-8' : 'w-4'}`} />
+                  <button 
+                    onClick={() => scrollToSection('experience')} 
+                    className="text-white hover:text-gray-400 text-left focus:outline-none border-none bg-transparent cursor-pointer">
+                    EXPERIENCE
+                  </button>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className={`h-[1px] bg-white transition-all duration-300 ${activeSection === 'projects' ? 'w-8' : 'w-4'}`} />
+                  <button 
+                    onClick={() => scrollToSection('projects')} 
+                    className="text-white hover:text-gray-400 text-left focus:outline-none border-none bg-transparent cursor-pointer">
+                    PROJECTS
+                  </button>
+                </div>
               </div>
             </div>
             

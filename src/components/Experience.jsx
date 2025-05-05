@@ -7,12 +7,6 @@ const Experience = () => {
       title: "Intern at Atisa",
       description: "Worked on various projects involving web development and design.",
       skills: ["HTML", "CSS", "JavaScript"]
-    },
-    {
-        date: "2025 - PRESENT",
-        title: "Intern at Atisa",
-        description: "Worked on various projects involving web development and design.",
-        skills: ["HTML", "CSS", "JavaScript"]
     }
   ];
 

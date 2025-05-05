@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
 import './App.css';
@@ -20,11 +21,23 @@ function App() {
               </div>
             </div>
             
-            <div className="flex gap-4">
-              <a href="" aria-label="Github"><img src="path/to/github" alt="Github" className="h-8 w-8" /></a>
-              <a href="" aria-label="LinkedIn"><img src="path/to/linkedin" alt="LinkedIn" className="h-8 w-8" /></a>
-              <a href="" aria-label="Twitter"><img src="path/to/twitter" alt="Twitter" className="h-8 w-8" /></a>
-              <a href="" aria-label="Instagram"><img src="path/to/instagram" alt="Instagram" className="h-8 w-8" /></a>
+            <div className="flex gap-6">
+              <a href="https://github.com/YoussefAKQ" target="_blank" rel="noopener noreferrer" 
+                className="text-gray-400 hover:text-white">
+                <FaGithub className="w-6 h-6" />
+              </a>
+              <a href="https://linkedin.com/in/YoussefAKQ" target="_blank" rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white">
+                <FaLinkedin className="w-6 h-6" />
+              </a>
+              <a href="https://twitter.com/YoussefAKQ" target="_blank" rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white">
+                <FaTwitter className="w-6 h-6" />
+              </a>
+              <a href="https://instagram.com/YoussefAKQ" target="_blank" rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white">
+                <FaInstagram className="w-6 h-6" />
+              </a>
             </div>
           </div>
         </div>

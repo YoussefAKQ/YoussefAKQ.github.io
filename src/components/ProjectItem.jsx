@@ -7,7 +7,7 @@ const ProjectItem = ({ title, description, image, skills, link }) => {
         className="w-32 md:w-40 h-20 md:h-28 object-cover rounded-xl border-2 border-slate-200/10 transition group-hover:border-slate-200/30 flex-shrink-0" 
       />
       <div className='space-y-2 flex-grow min-w-0'>
-        <h3 className='text-lg md:text-xl font-bold'>{title}</h3>
+        <h3 className='text-lg md:text-xl font-bold -mt-1'>{title}</h3>
         <p className='text-sm md:text-base'>{description}</p>
         <div className='flex flex-wrap gap-2 mt-2'>
           {skills.map((skill, index) => (

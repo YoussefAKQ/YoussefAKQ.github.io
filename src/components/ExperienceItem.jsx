@@ -1,9 +1,9 @@
 const ExperienceItem = ({ date, title, description, skills }) => {
   return (
     <div className='flex flex-row gap-6 hover:bg-white/10 p-3 rounded-lg transition duration-125 ease-in-out md:flex-row flex-col'>
-      <p className='text-gray-400 text-sm'>{date}</p>
+      <p className='text-gray-400 text-xs'>{date}</p>
       <div className='max-w-[450px] space-y-2 text-sm md:text-base'>
-        <p className='text-xl font-bold'>{title}</p>
+        <p className='text-xl font-bold -mt-1'>{title}</p>
         <p>{description}</p>
         <div className='flex flex-wrap gap-2 mt-2'>
           {skills.map((skill, index) => (

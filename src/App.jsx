@@ -53,7 +53,7 @@ function App() {
                   <div className={`h-[1px] bg-white transition-all duration-300 ${activeSection === 'about' ? 'w-8' : 'w-4'}`} />
                   <button 
                     onClick={() => scrollToSection('about')} 
-                    className="text-white hover:text-gray-400 text-left focus:outline-none border-none bg-transparent cursor-pointer">
+                    className={`${activeSection === 'about' ? 'text-white' : 'text-gray-400'} hover:text-white text-left focus:outline-none border-none bg-transparent cursor-pointer font-bold transition-colors`}>
                     ABOUT
                   </button>
                 </div>
@@ -61,7 +61,7 @@ function App() {
                   <div className={`h-[1px] bg-white transition-all duration-300 ${activeSection === 'experience' ? 'w-8' : 'w-4'}`} />
                   <button 
                     onClick={() => scrollToSection('experience')} 
-                    className="text-white hover:text-gray-400 text-left focus:outline-none border-none bg-transparent cursor-pointer">
+                    className={`${activeSection === 'experience' ? 'text-white' : 'text-gray-400'} hover:text-white text-left focus:outline-none border-none bg-transparent cursor-pointer font-bold transition-colors`}>
                     EXPERIENCE
                   </button>
                 </div>
@@ -69,7 +69,7 @@ function App() {
                   <div className={`h-[1px] bg-white transition-all duration-300 ${activeSection === 'projects' ? 'w-8' : 'w-4'}`} />
                   <button 
                     onClick={() => scrollToSection('projects')} 
-                    className="text-white hover:text-gray-400 text-left focus:outline-none border-none bg-transparent cursor-pointer">
+                    className={`${activeSection === 'projects' ? 'text-white' : 'text-gray-400'} hover:text-white text-left focus:outline-none border-none bg-transparent cursor-pointer font-bold transition-colors`}>
                     PROJECTS
                   </button>
                 </div>

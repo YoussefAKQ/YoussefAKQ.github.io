@@ -64,7 +64,7 @@ function App() {
             <div>
               <h1 className="text-4xl md:text-5xl font-bold">Youssef Khalifa</h1>
               <h3 className="text-lg md:text-xl font-semibold mt-2">Junior Developer</h3>
-              <p className="mt-4 md:mt-6 max-w-[300px]">I enjoy building websites and applications and learning new technologies. </p>
+              <p className="mt-4 md:mt-6 max-w-[300px]">I enjoy building websites, applications and learning new technologies. </p>
               <div className="hidden md:flex md:flex-col space-y-3 md:space-y-4 mt-8 md:mt-14">
                 <div className="flex items-center gap-2">
                   <div className={`h-[1px] bg-white transition-all duration-300 ${activeSection === 'about' ? 'w-8' : 'w-4'}`} />

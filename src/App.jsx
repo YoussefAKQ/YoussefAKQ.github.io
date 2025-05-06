@@ -92,6 +92,7 @@ function App() {
 
   return (
     <>
+      <Analytics/>
       <div 
         className="cursor-light" 
         style={{ 

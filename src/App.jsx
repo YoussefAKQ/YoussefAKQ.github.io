@@ -163,7 +163,7 @@ function App() {
               <span className='text-white no-underline'>
                 <HoverWord
                   word="video games"
-                  imgSrc="/src/assets/eftlogo4.png"
+                  imgSrc="/eftlogo4.png"
                   alt="EFT"
                   className="no-underline"
                 />
@@ -171,7 +171,7 @@ function App() {
               <span className='text-white no-underline'>
                 <HoverWord
                   word="sports."
-                  imgSrc="/src/assets/jiujitsulogoblanco.png"
+                  imgSrc="/jiujitsulogoBLANCO.png"
                   alt="Jiu Jitsu"
                   className="no-underline"
                 />

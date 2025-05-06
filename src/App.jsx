@@ -4,6 +4,7 @@ import Experience from './components/Experience';
 import Projects from './components/Projects';
 import './App.css';
 import { FaXTwitter } from 'react-icons/fa6';
+import { Analytics } from "@vercel/analytics/react"
 
 function HoverWord({ word, imgSrc, alt }) {
   const [hover, setHover] = useState(false);
@@ -181,6 +182,7 @@ function App() {
           <Experience />
           <Projects />
         </div>
+        <Analytics/>
       </div>
     </>
   );

@@ -28,7 +28,7 @@ function HoverWord({ word, imgSrc, alt }) {
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
       style={{
-        cursor: hover && cursorImg ? `url(${cursorImg}) 32 -64, auto` : 'inherit'
+        cursor: hover && cursorImg ? `url(${cursorImg}) 32 -64, auto` : 'inherit',
       }}
     >
 <span

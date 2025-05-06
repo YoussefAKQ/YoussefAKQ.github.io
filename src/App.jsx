@@ -64,7 +64,7 @@ function App() {
             <div>
               <h1 className="text-4xl md:text-5xl font-bold">Youssef Khalifa</h1>
               <h3 className="text-lg md:text-xl font-semibold mt-2">Junior Developer</h3>
-              <p className="mt-4 md:mt-6 max-w-[300px]">I enjoy building websites, applications and learning new technologies. </p>
+              <p className="mt-4 md:mt-6 max-w-[300px] text-gray-400">I enjoy building websites, applications and learning new technologies. </p>
               <div className="hidden md:flex md:flex-col space-y-3 md:space-y-4 mt-8 md:mt-14">
                 <div className="flex items-center gap-2">
                   <div className={`h-[1px] bg-white transition-all duration-300 ${activeSection === 'about' ? 'w-8' : 'w-4'}`} />
@@ -119,7 +119,8 @@ function App() {
             <p>In my first year, I studied <span className='text-white'>SQL with MySQL, Java in Eclipse, Python in IDLE, Linux with VirtualBox, HTML, CSS, XML, and gained exposure to Oracle DB</span>, among other topics. In my second year, I've studied <span className='text-white'>Visual Basic .NET, Java in Android Studio, Data Access with Java, Odoo on AWS, Python, video game development with libGDX in Java</span>, and much more.</p>
             <p>Additionally, I've self-studied <span className='text-white'>JavaScript, React Native, Tailwind, Git, and Next.js</span> to further expand my skill set.</p>
             <p>Currently, I'm doing an internship as a Junior Software Developer, where I'm studying, training, and working with <span className='text-white'>PHP CodeIgniter 4, React, Tailwind, Python AI Oriented (RAG, ChromaDB, Chatbot, OpenAI API)</span>.</p>
-          </section>
+            <p>In my free time, I enjoy playing <span className='text-white'>video games</span> or staying active through <span className='text-white'>sports.</span></p>
+            </section>
           <Experience />
           <Projects />
         </div>

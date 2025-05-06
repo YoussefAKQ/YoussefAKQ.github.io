@@ -158,7 +158,7 @@ function App() {
             <p>I'm 20 years old and a <span className='text-white'>software development student</span>. Currently, I'm in my second year of an advanced degree in Application Development in Madrid, Spain.</p>
             <p>In my first year, I studied <span className='text-white'>SQL with MySQL, Java in Eclipse, Python in IDLE, Linux with VirtualBox, HTML, CSS, XML, and gained exposure to Oracle DB</span>, among other topics. In my second year, I've studied <span className='text-white'>Visual Basic .NET, Java in Android Studio, Data Access with Java, Odoo on AWS, Python, video game development with libGDX in Java</span>, and much more.</p>
             <p>Additionally, I've self-studied <span className='text-white'>JavaScript, React Native, Tailwind, Git, and Next.js</span> to further expand my skill set.</p>
-            <p>Currently, I'm doing an internship as a Junior Software Developer, where I'm studying, training, and working with <span className='text-white'>PHP CodeIgniter 4, React, Tailwind, Python AI Oriented (RAG, ChromaDB, Chatbot, OpenAI API)</span>.</p>
+            <p>Currently, I'm doing an internship as a Junior Software Developer, where I'm studying, training, and working with <span className='text-white '>PHP CodeIgniter 4, React, Tailwind, Python AI Oriented (RAG, ChromaDB, Chatbot, OpenAI API)</span>.</p>
             <p>In my free time, I enjoy playing 
               <span className='text-white no-underline'>
                 <HoverWord

@@ -138,7 +138,7 @@ function App() {
                 className="text-gray-400 hover:text-white">
                 <FaGithub className="w-5 h-5 md:w-6 md:h-6" />
               </a>
-              <a href="https://linkedin.com/in/YoussefAKQ" target="_blank" rel="noopener noreferrer"
+              <a href="https://www.linkedin.com/in/youssef-alexander-khalifa-quispe-622a6b2bb" target="_blank" rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white">
                 <FaLinkedin className="w-5 h-5 md:w-6 md:h-6" />
               </a>

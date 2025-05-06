@@ -174,7 +174,7 @@ function App() {
                   word="sports."
                   imgSrc="/jiujitsulogoBLANCO.png"
                   alt="Jiu Jitsu"
-                  className="no-underline"
+                  className="no-underline "
                 />
               </span>
             </p>

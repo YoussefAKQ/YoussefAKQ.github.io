@@ -5,6 +5,46 @@ import Projects from './components/Projects';
 import './App.css';
 import { FaXTwitter } from 'react-icons/fa6';
 
+function HoverWord({ word, imgSrc, alt }) {
+  const [hover, setHover] = useState(false);
+  const [cursorImg, setCursorImg] = useState(null);
+
+  useEffect(() => {
+    const img = new Image();
+    img.src = imgSrc;
+    img.onload = () => {
+      const canvas = document.createElement('canvas');
+      canvas.width = 78;
+      canvas.height = 64;
+      const ctx = canvas.getContext('2d');
+      ctx.drawImage(img, 0, 0, 74, 64);
+      setCursorImg(canvas.toDataURL());
+    };
+  }, [imgSrc]);
+
+  return (
+    <span
+      className="relative inline-block mx-1 group"
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
+      style={{
+        cursor: hover && cursorImg ? `url(${cursorImg}) 32 -64, auto` : 'inherit'
+      }}
+    >
+<span
+  className={`
+    relative transition-all duration-500
+    ${hover
+      ? 'bg-gradient-to-r from-purple-400 via-blue-500 to-gray-500 bg-clip-text text-transparent'
+      : 'text-white'}
+  `}
+>
+  {word}
+</span>
+    </span>
+  );
+}
+
 function App() {
   const [activeSection, setActiveSection] = useState('about');
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -119,7 +159,24 @@ function App() {
             <p>In my first year, I studied <span className='text-white'>SQL with MySQL, Java in Eclipse, Python in IDLE, Linux with VirtualBox, HTML, CSS, XML, and gained exposure to Oracle DB</span>, among other topics. In my second year, I've studied <span className='text-white'>Visual Basic .NET, Java in Android Studio, Data Access with Java, Odoo on AWS, Python, video game development with libGDX in Java</span>, and much more.</p>
             <p>Additionally, I've self-studied <span className='text-white'>JavaScript, React Native, Tailwind, Git, and Next.js</span> to further expand my skill set.</p>
             <p>Currently, I'm doing an internship as a Junior Software Developer, where I'm studying, training, and working with <span className='text-white'>PHP CodeIgniter 4, React, Tailwind, Python AI Oriented (RAG, ChromaDB, Chatbot, OpenAI API)</span>.</p>
-            <p>In my free time, I enjoy playing <span className='text-white'>video games</span> or staying active through <span className='text-white'>sports.</span></p>
+            <p>In my free time, I enjoy playing 
+              <span className='text-white no-underline'>
+                <HoverWord
+                  word="video games"
+                  imgSrc="/src/assets/eftlogo4.png"
+                  alt="EFT"
+                  className="no-underline"
+                />
+              </span>or staying active through 
+              <span className='text-white no-underline'>
+                <HoverWord
+                  word="sports."
+                  imgSrc="/src/assets/jiujitsulogoblanco.png"
+                  alt="Jiu Jitsu"
+                  className="no-underline"
+                />
+              </span>
+            </p>
             </section>
           <Experience />
           <Projects />

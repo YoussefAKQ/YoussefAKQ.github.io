@@ -183,7 +183,6 @@ function App() {
           <Experience />
           <Projects />
         </div>
-        <Analytics/>
       </div>
     </>
   );

@@ -14,10 +14,10 @@ function HoverWord({ word, imgSrc, alt }) {
     img.src = imgSrc;
     img.onload = () => {
       const canvas = document.createElement('canvas');
-      canvas.width = 78;
-      canvas.height = 64;
+      canvas.width = 104;
+      canvas.height = 72;
       const ctx = canvas.getContext('2d');
-      ctx.drawImage(img, 0, 0, 74, 64);
+      ctx.drawImage(img, 0, 0, 104, 72);
       setCursorImg(canvas.toDataURL());
     };
   }, [imgSrc]);
@@ -28,7 +28,7 @@ function HoverWord({ word, imgSrc, alt }) {
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
       style={{
-        cursor: hover && cursorImg ? `url(${cursorImg}) 32 -64, auto` : 'inherit',
+        cursor: hover && cursorImg ? `url(${cursorImg}) 32 -86, auto` : 'inherit',
       }}
     >
 <span

@@ -34,7 +34,7 @@ const Projects = () => {
   ];
 
   return (
-    <section id='projects' className='space-y-10 mt-32'>
+    <section id='projects' className='space-y-10 mt-20 md:mt-32'>
       <div className='grid grid-cols-1 gap-8'>
         {projects.map((project, index) => (
           <ProjectItem key={index} {...project} />

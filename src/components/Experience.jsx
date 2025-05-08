@@ -11,7 +11,7 @@ const Experience = () => {
   ];
 
   return (
-    <section id='experience' className='space-y-6 mt-32'>
+    <section id='experience' className='space-y-6 mt-20 md:mt-32'>
       <div className='flex flex-col gap-5 space-y-6 '>
         {experiences.map((experience, index) => (
           <ExperienceItem key={index} {...experience} />

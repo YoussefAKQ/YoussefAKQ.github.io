@@ -10,13 +10,6 @@ const Projects = () => {
         skills: ["React Native", "JavaScript", "TailwindCSS"],
         link: "https://bampresearch.com"
       },
-      {
-        title: "Chatbot",
-        description: "A chatbot application for enhancing user interaction.",
-        image: "/chatbot.png",
-        skills: ["React", "Node.js", "AI"],
-        link: "https://github.com/YoussefAKQ/Chatbot"
-    },
     {
         title: "Bamp",
         description: "I contributed to the development of Bamp, a web application for sending and managing school reports.",

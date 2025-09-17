@@ -5,10 +5,10 @@ const Projects = () => {
     
       {
         title: "Bamp Mobile App",
-        description: "I'm currently working on the mobile version of Bamp, a web application for sending and managing school reports.",
-        image: "/bampmobile.png",
+        description: "I developed Bamp Mobile, a mobile application for sending and managing school reports.",
+        image: "/bamp.png",
         skills: ["React Native", "JavaScript", "TailwindCSS"],
-        link: "https://bampresearch.com"
+        link: "https://github.com/YoussefAKQ/bamp-mobile"
       },
     {
         title: "Bamp",

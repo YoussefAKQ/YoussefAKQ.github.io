@@ -8,7 +8,8 @@ const ExperienceItem = ({ date, title, description, skills, recommendationUrl })
           {recommendationUrl && (
             <a
               href={recommendationUrl}
-              download
+              target='_blank'
+              rel='noopener noreferrer'
               className='text-xs bg-gray-500 hover:bg-white/10 text-white px-2 py-1 rounded transition'
             >
               Recomendation Letter

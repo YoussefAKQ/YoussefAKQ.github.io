@@ -157,29 +157,28 @@ function App() {
         </div>
         <div className="w-full md:w-1/2 md:max-w-[600px]">
           <section id='about' className='space-y-4 md:space-y-6 text-gray-400 text-sm md:text-base'>
-            <p>I'm 21 years old and a <span className='text-white'>software development student</span>. Currently, I'm in my second year of an advanced degree in Application Development in Madrid, Spain.</p>
-            <p>In my first year, I studied <span className='text-white'>SQL with MySQL, Java in Eclipse, Python in IDLE, Linux with VirtualBox, HTML, CSS, XML, and gained exposure to Oracle DB</span>, among other topics. In my second year, I've studied <span className='text-white'>Visual Basic .NET, Java in Android Studio, Data Access with Java, Odoo on AWS, Python, video game development with libGDX in Java</span>, and much more.</p>
-            <p>Additionally, I've self-studied <span className='text-white'>JavaScript, React Native, Tailwind, Git, and Next.js</span> to further expand my skill set.</p>
-            <p>Currently, I'm doing an internship as a Junior Software Developer, where I'm studying, training, and working with <span className='text-white '>PHP CodeIgniter 4, React, Javascript, Tailwind, Python AI Oriented (RAG, ChromaDB, Chatbot, OpenAI API, Ollama), Git</span>, and more.</p>
-            <p>In my free time, I enjoy playing 
-              <span className='text-white no-underline'>
+            <p>I'm a 21-year-old <span className='text-white'>software developer</span> based in Madrid, Spain, graduated in Multiplatform Application Development.</p>
+
+            <p>During my studies, I worked with technologies such as <span className='text-white'>SQL with MySQL, Java in Eclipse, Python in IDLE, Linux with VirtualBox, HTML, CSS, XML, and Oracle DB</span>. Later, I expanded my experience with <span className='text-white'>Visual Basic .NET, Java for Android Studio, data access with Java, Odoo on AWS, Python, and game development using libGDX</span>.</p>
+
+            <p>In addition to my academic background, I've self-taught <span className='text-white'>JavaScript, React Native, Tailwind, Git, and Next.js</span> to strengthen and broaden my skill set.</p>
+
+            <p>I'm currently working as a <span className='text-white'>Junior Software Developer</span> at Atisa, where I contribute to projects using mainly Python and others like<span className='text-white'>PHP CodeIgniter 4, React, JavaScript, Tailwind, and Python with AI-focused tools (RAG, ChromaDB, Chatbots, OpenAI API, Ollama)</span>, among others.</p>
+
+            <p>In my free time, I enjoy playing <span className='text-white no-underline'>
                 <HoverWord
                   word="video games"
                   imgSrc="/eftlogo4.png"
                   alt="EFT"
-                  className="no-underline"
                 />
-              </span>or staying active through 
-              <span className='text-white no-underline'>
+              </span> or staying active through <span className='text-white no-underline'>
                 <HoverWord
                   word="sports."
                   imgSrc="/jiujitsulogoBLANCO.png"
                   alt="Jiu Jitsu"
-                  className="no-underline "
                 />
-              </span>
-            </p>
-            </section>
+              </span> and constantly improving my programming skills.</p>
+          </section>
           <Experience />
           <Projects />
         </div>

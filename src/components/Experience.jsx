@@ -3,13 +3,13 @@ import ExperienceItem from './ExperienceItem';
 const Experience = () => {
   const experiences = [
         {
-      date: "September 2025 - Present",
+      date: "March 2025 - Present",
       title: "Junior Developer at Atisa",
       description:
-        "Im currently working as a Junior Developer at Atisa, where I contribute to web development projects and collaborate with a team to deliver high-quality software solutions.",
+        "I’m currently working as a Junior Developer at Atisa, developing innovative solutions and improving processes through automation and modern tools.",
       skills: [
         "React",
-        "Python AI Oriented",
+        "Python",
         "JavaScript",
         "TypeScript",
         "Flutter",
@@ -19,29 +19,13 @@ const Experience = () => {
         "CSS",
         "NodeJS",
         "MySQL",
-        "Git"
-      ],
-    },
-    {
-      date: "March 2025 - June 2025",
-      title: "Internship Developer at Atisa",
-      description:
-        "Worked on various projects involving web development, software development, and database management. Gained experience in collaborating with a team and using version control systems.",
-      skills: [
-        "React",
-        "Python AI Oriented",
-        "JavaScript",
-        "TypeScript",
-        "Flutter",
-        "TailwindCSS",
-        "PHP",
-        "HTML",
-        "CSS",
-        "NodeJS",
-        "MySQL",
-        "Git"
-      ],
-      recommendationUrl: "/RLYoussef.pdf"
+        "Git",
+        "GitHub",
+        "MariaDB",
+        "PostgreSQL",
+        "Dart",
+        "REST APIs",
+      ]
     }
   ];
 

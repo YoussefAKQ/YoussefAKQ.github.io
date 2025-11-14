@@ -3,7 +3,7 @@ import ExperienceItem from './ExperienceItem';
 const Experience = () => {
   const experiences = [
         {
-      date: "September 2025 - Present",
+      date: "09/2025 - Present",
       title: "Developer at Atisa",
       description:
         "I’m currently working as a Developer at Atisa, developing innovative solutions and improving processes through automation and modern tools.",
@@ -25,7 +25,7 @@ const Experience = () => {
       ]
     },
             {
-      date: "March 2025 - June 2025",
+      date: "03/2025 - 06/2025",
       title: "Intenrship Developer at Atisa",
       description:
         "As an intern at Atisa, I gained experience in Python, RAG, ChromaDB, AI projects, Supabase, Docker, and had some exposure to PHP.",

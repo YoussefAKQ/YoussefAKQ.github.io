@@ -11,17 +11,14 @@ const Experience = () => {
         "React",
         "Python",
         "JavaScript",
-        "TypeScript",
         "Tailwind",
         "HTML",
         "CSS",
-        "NodeJS",
         "MySQL",
         "Git",
-        "GitHub",
-        "PostgreSQL",
         "FastAPI",
-        "Docker"
+        "Docker".
+        "PHP",
       ]
     },
             {
@@ -40,7 +37,11 @@ const Experience = () => {
         "Git",
         "GitHub",
         "Supabase",
-        "Docker"
+        "Docker",
+        "ChromaDB",
+        "RAG",
+        "AI".
+        "PHP"
       ]
     }
   ];

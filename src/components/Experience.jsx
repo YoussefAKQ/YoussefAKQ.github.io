@@ -1,56 +1,65 @@
 import ExperienceItem from './ExperienceItem';
+import Reveal from './Reveal';
 
 const Experience = () => {
   const experiences = [
-        {
-      date: "09/2025 - Present",
-      title: "Developer at Atisa",
+    {
+      date: "JUN 2026 — PRESENT",
+      title: "Junior AI Engineer · Arktic",
       description:
-        "I’m currently working as a Developer at Atisa, developing innovative solutions and improving processes through automation and modern tools.",
+        "R&D on RAG architectures: building proofs of concept with vector databases to optimize search and retrieval over internal documents. Prototyping with the Model Context Protocol (MCP) to connect external data sources and developing custom skills for Claude.",
       skills: [
-        "React",
+        "RAG",
+        "Vector DBs",
+        "MCP",
+        "Anthropic API",
+        "Claude",
         "Python",
-        "JavaScript",
-        "Tailwind",
-        "HTML",
-        "CSS",
-        "MySQL",
-        "Git",
-        "FastAPI",
-        "Docker".
-        "PHP",
       ]
     },
-            {
-      date: "03/2025 - 06/2025",
-      title: "Intenrship Developer at Atisa",
+    {
+      date: "SEP 2025 — JUN 2026",
+      title: "Software Developer · Atisa",
       description:
-        "As an intern at Atisa, I gained experience in Python, RAG, ChromaDB, AI projects, Supabase, Docker, and had some exposure to PHP.",
+        "Built an AI-powered invoice extraction app (FastAPI, React, Tailwind, OpenAI API) with semaphore-based concurrency control to optimize costs and RBAC security. Developed an internal LLM playground with prompt versioning and an analytics dashboard to compare models by latency, tokens and cost. Fullstack development of a corporate helpdesk portal giving technical support to 300+ employees.",
       skills: [
-        "React",
         "Python",
-        "JavaScript",
+        "FastAPI",
+        "React",
         "Tailwind",
-        "HTML",
-        "CSS",
+        "OpenAI API",
         "MySQL",
+        "Docker",
         "Git",
-        "GitHub",
+      ]
+    },
+    {
+      date: "MAR 2025 — JUN 2025",
+      title: "Software Developer Intern · Atisa",
+      description:
+        "Designed chatbots with ChromaDB and the OpenAI API, and analyzed the feasibility of local LLMs for chatbots and OCR on legal documents. Built Python scripts to automate the download, processing and AI-driven analysis of collective agreements.",
+      skills: [
+        "Python",
+        "RAG",
+        "ChromaDB",
+        "OpenAI API",
+        "OCR",
         "Supabase",
         "Docker",
-        "ChromaDB",
-        "RAG",
-        "AI".
-        "PHP"
       ]
     }
   ];
 
   return (
-    <section id='experience' className='space-y-6 mt-20 md:mt-32'>
-      <div className='flex flex-col gap-5 space-y-6'>
+    <section id='experience' className='pt-24 md:pt-32'>
+      <Reveal>
+        <h2 className='text-xs font-bold tracking-[0.25em] text-gray-500 uppercase mb-8'>Experience</h2>
+      </Reveal>
+      <div className='flex flex-col gap-10'>
         {experiences.map((experience, index) => (
-          <ExperienceItem key={index} {...experience} />
+          <Reveal key={index} delay={index * 100}>
+            <ExperienceItem {...experience} />
+          </Reveal>
         ))}
       </div>
     </section>

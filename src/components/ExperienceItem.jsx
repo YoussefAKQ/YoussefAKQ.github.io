@@ -1,30 +1,31 @@
 const ExperienceItem = ({ date, title, description, skills, recommendationUrl }) => {
   return (
-    <div className='flex flex-row gap-6 hover:bg-white/10 p-3 rounded-lg transition duration-125 ease-in-out md:flex-row flex-col cursor-default'>
-      <p className='text-gray-400 text-xs'>{date}</p>
-      <div className='max-w-[450px] space-y-2 text-sm md:text-base'>
-        <div className='flex items-center gap-2'>
-          <p className='text-xl font-bold -mt-1'>{title}</p>
+    <div className='group relative pl-6 border-l border-white/10 hover:border-white/40 transition-colors duration-300 cursor-default'>
+      <span className='absolute -left-[3px] top-1.5 w-[5px] h-[5px] rounded-full bg-white/30 group-hover:bg-white transition-colors duration-300' />
+      <p className='text-gray-500 text-xs tracking-widest'>{date}</p>
+      <div className='mt-2 space-y-2 text-sm md:text-base'>
+        <div className='flex items-center gap-2 flex-wrap'>
+          <p className='text-lg md:text-xl font-bold text-white'>{title}</p>
           {recommendationUrl && (
             <a
               href={recommendationUrl}
               target='_blank'
               rel='noopener noreferrer'
-              className='text-xs bg-gray-500 hover:bg-white/10 text-white px-2 py-1 rounded transition'
+              className='text-xs bg-white/10 hover:bg-white/20 text-white px-2 py-1 rounded transition'
             >
-              Recomendation Letter
+              Recommendation Letter
             </a>
           )}
         </div>
-        <p>{description}</p>
-        <div className='flex flex-wrap gap-2 mt-2'>
+        <p className='text-gray-400 leading-relaxed'>{description}</p>
+        <div className='flex flex-wrap gap-2 pt-1'>
           {skills.map((skill, index) => (
-            <p
+            <span
               key={index}
-              className='text-xs md:text-sm text-gray-500 bg-white/5 px-2 py-1 rounded cursor-default'
+              className='text-xs text-gray-400 bg-white/5 border border-white/5 px-2.5 py-1 rounded-full'
             >
               {skill}
-            </p>
+            </span>
           ))}
         </div>
       </div>

@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
-import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
+import Reveal from './components/Reveal';
 import './App.css';
-import { FaXTwitter } from 'react-icons/fa6';
 import { Analytics } from "@vercel/analytics/react"
 
 function HoverWord({ word, imgSrc, alt }) {
@@ -32,19 +32,26 @@ function HoverWord({ word, imgSrc, alt }) {
         cursor: hover && cursorImg ? `url(${cursorImg}) 32 -86, auto` : 'inherit',
       }}
     >
-<span
-  className={`
-    relative transition-all duration-500
-    ${hover
-      ? 'bg-gradient-to-r from-purple-400 via-blue-500 to-gray-500 bg-clip-text text-transparent'
-      : 'text-white'}
-  `}
->
-  {word}
-</span>
+      <span
+        className={`
+          relative transition-all duration-500
+          ${hover
+            ? 'bg-gradient-to-r from-purple-400 via-blue-500 to-gray-500 bg-clip-text text-transparent'
+            : 'text-white'}
+        `}
+      >
+        {word}
+      </span>
     </span>
   );
 }
+
+const NAV_SECTIONS = ['about', 'experience', 'projects'];
+
+const SOCIALS = [
+  { href: "https://github.com/YoussefAKQ", Icon: FaGithub, label: "GitHub" },
+  { href: "https://www.linkedin.com/in/youssef-alexander-khalifa-quispe-622a6b2bb", Icon: FaLinkedin, label: "LinkedIn" },
+];
 
 function App() {
   const [activeSection, setActiveSection] = useState('about');
@@ -63,12 +70,11 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['about', 'experience', 'projects'];
-      const currentSection = sections.find(section => {
+      const currentSection = NAV_SECTIONS.find(section => {
         const element = document.getElementById(section);
         if (element) {
           const rect = element.getBoundingClientRect();
-          return rect.top >= 0 && rect.top <= 300;
+          return rect.top >= 0 && rect.top <= 350;
         }
         return false;
       });
@@ -93,96 +99,100 @@ function App() {
   return (
     <>
       <Analytics/>
-      <div 
-        className="cursor-light" 
-        style={{ 
-          left: `${mousePosition.x}px`, 
-          top: `${mousePosition.y}px` 
-        }} 
+      <div
+        className="cursor-light"
+        style={{
+          left: `${mousePosition.x}px`,
+          top: `${mousePosition.y}px`
+        }}
       />
-      <div className="min-w-[320px] max-w-[1200px] mx-auto flex flex-col md:flex-row gap-8 md:gap-0 mt-10 md:mt-20 mb-10 md:mb-20 px-6 md:px-4">
-        <div className="w-full md:w-1/2">
-          <div className="md:sticky md:top-20 md:h-[calc(100vh-10rem)] flex flex-col justify-between">
-            <div>
-              <h1 className="text-4xl md:text-5xl font-bold">Youssef Khalifa</h1>
-              <h3 className="text-lg md:text-xl font-semibold mt-2">Junior Developer</h3>
-              <p className="mt-4 md:mt-6 max-w-[300px] text-gray-400">I’m passionate mainly about backend development and AI projects, but I also enjoy front-end development.</p>
-              <div className="hidden md:flex md:flex-col space-y-3 md:space-y-4 mt-8 md:mt-14">
-                <div className="flex items-center gap-2">
-                  <div className={`h-[1px] bg-white transition-all duration-300 ${activeSection === 'about' ? 'w-8' : 'w-4'}`} />
-                  <button 
-                    onClick={() => scrollToSection('about')} 
-                    className={`${activeSection === 'about' ? 'text-white' : 'text-gray-400'} hover:text-white text-left focus:outline-none border-none bg-transparent cursor-pointer font-bold transition-colors`}>
-                    ABOUT
-                  </button>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className={`h-[1px] bg-white transition-all duration-300 ${activeSection === 'experience' ? 'w-8' : 'w-4'}`} />
-                  <button 
-                    onClick={() => scrollToSection('experience')} 
-                    className={`${activeSection === 'experience' ? 'text-white' : 'text-gray-400'} hover:text-white text-left focus:outline-none border-none bg-transparent cursor-pointer font-bold transition-colors`}>
-                    EXPERIENCE
-                  </button>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className={`h-[1px] bg-white transition-all duration-300 ${activeSection === 'projects' ? 'w-8' : 'w-4'}`} />
-                  <button 
-                    onClick={() => scrollToSection('projects')} 
-                    className={`${activeSection === 'projects' ? 'text-white' : 'text-gray-400'} hover:text-white text-left focus:outline-none border-none bg-transparent cursor-pointer font-bold transition-colors`}>
-                    PROJECTS
-                  </button>
-                </div>
-              </div>
-            </div>
-            
-            <div className="flex gap-6 mt-8 md:mt-0">
-              <a href="https://github.com/YoussefAKQ" target="_blank" rel="noopener noreferrer" 
-                className="text-gray-400 hover:text-white">
-                <FaGithub className="w-5 h-5 md:w-6 md:h-6" />
-              </a>
-              <a href="https://www.linkedin.com/in/youssef-alexander-khalifa-quispe-622a6b2bb" target="_blank" rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white">
-                <FaLinkedin className="w-5 h-5 md:w-6 md:h-6" />
-              </a>
-              <a href="https://twitter.com/YoussefAKQ" target="_blank" rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white">
-                <FaXTwitter className="w-5 h-5 md:w-6 md:h-6" />
-              </a>
-              <a href="https://instagram.com/YoussefAKQ" target="_blank" rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white">
-                <FaInstagram className="w-5 h-5 md:w-6 md:h-6" />
-              </a>
-            </div>
+
+      <header className="sticky top-0 z-50 backdrop-blur-md bg-[#242424]/70 border-b border-white/5">
+        <nav className="max-w-2xl mx-auto flex items-center justify-between px-6 py-4">
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            className="text-white font-bold tracking-widest text-sm bg-transparent border-none cursor-pointer focus:outline-none"
+          >
+            YK
+          </button>
+          <div className="flex gap-5 md:gap-8">
+            {NAV_SECTIONS.map(section => (
+              <button
+                key={section}
+                onClick={() => scrollToSection(section)}
+                className={`relative text-xs tracking-[0.2em] uppercase bg-transparent border-none cursor-pointer focus:outline-none transition-colors duration-300 pb-1
+                  ${activeSection === section ? 'text-white' : 'text-gray-500 hover:text-gray-300'}`}
+              >
+                {section}
+                <span className={`absolute left-0 -bottom-0.5 h-[1px] bg-white transition-all duration-300 ${activeSection === section ? 'w-full' : 'w-0'}`} />
+              </button>
+            ))}
           </div>
-        </div>
-        <div className="w-full md:w-1/2 md:max-w-[600px]">
-          <section id='about' className='space-y-4 md:space-y-6 text-gray-400 text-sm md:text-base'>
-            <p>I'm a 21-year-old <span className='text-white'>software developer</span> based in Madrid, Spain, graduated in Multiplatform Application Development.</p>
+        </nav>
+      </header>
 
-            <p>During my studies, I worked with technologies such as <span className='text-white'>SQL with MySQL, Java in Eclipse, Python in IDLE, Linux with VirtualBox, HTML, CSS, XML, and Oracle DB</span>. Later, I expanded my experience with <span className='text-white'>Visual Basic .NET, Java for Android Studio, data access with Java, Odoo on AWS, Python, and game development using libGDX</span>.</p>
+      <main className="max-w-2xl mx-auto px-6 pb-24">
+        <section className="pt-20 md:pt-28 hero-enter">
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight">Youssef Khalifa</h1>
+          <h3 className="text-base md:text-lg font-medium text-gray-400 mt-3 tracking-wide">AI Engineer · Software Developer</h3>
+          <p className="mt-6 max-w-md text-gray-400 leading-relaxed">
+            I build AI-powered products — RAG systems, LLM tooling and fullstack apps — from Madrid, Spain.
+          </p>
+          <div className="flex gap-5 mt-8">
+            {SOCIALS.map(({ href, Icon, label }) => (
+              <a
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={label}
+                className="text-gray-500 hover:text-white transition-all duration-300 hover:-translate-y-1"
+              >
+                <Icon className="w-5 h-5" />
+              </a>
+            ))}
+          </div>
+        </section>
 
-            <p>In addition to my academic background, I've self-taught <span className='text-white'>JavaScript, React Native, Tailwind, Git, and Next.js</span> to strengthen and broaden my skill set.</p>
+        <section id='about' className='pt-24 md:pt-32'>
+          <Reveal>
+            <h2 className='text-xs font-bold tracking-[0.25em] text-gray-500 uppercase mb-8'>About</h2>
+          </Reveal>
+          <Reveal>
+            <div className='space-y-5 text-gray-400 text-sm md:text-base leading-relaxed'>
+              <p>I'm a <span className='text-white'>software developer</span> based in Madrid, Spain, graduated in Multiplatform Application Development.</p>
 
-            <p>I'm currently working as a <span className='text-white'>Junior Software Developer</span> at Atisa, where I contribute to projects using mainly Python and others like<span className='text-white'>PHP CodeIgniter 4, React, JavaScript, Tailwind, and Python with AI-focused tools (RAG, ChromaDB, Chatbots, OpenAI API, Ollama)</span>, among others.</p>
+              <p>I'm currently working as a <span className='text-white'>Junior AI Engineer at Arktic</span>, doing R&D on <span className='text-white'>RAG architectures with vector databases</span> and prototyping with the <span className='text-white'>Model Context Protocol (MCP)</span> and custom skills for Claude within the Anthropic ecosystem.</p>
 
-            <p>In my free time, I enjoy playing <span className='text-white no-underline'>
-                <HoverWord
-                  word="video games"
-                  imgSrc="/eftlogo4.png"
-                  alt="EFT"
-                />
-              </span> or staying active through <span className='text-white no-underline'>
-                <HoverWord
-                  word="sports."
-                  imgSrc="/jiujitsulogoBLANCO.png"
-                  alt="Jiu Jitsu"
-                />
-              </span> and constantly improving my programming skills.</p>
-          </section>
-          <Experience />
-          <Projects />
-        </div>
-      </div>
+              <p>Before that, at Atisa I built <span className='text-white'>AI-powered fullstack applications</span> with FastAPI, React and the OpenAI API — from invoice extraction with OCR to an internal LLM playground and a corporate helpdesk supporting 300+ employees.</p>
+
+              <p>My toolbox includes <span className='text-white'>Python (FastAPI), React, Tailwind, MySQL, ChromaDB, HuggingFace and Git</span>, and I'm constantly exploring new AI tools and frameworks.</p>
+
+              <p>In my free time, I enjoy playing <span className='text-white no-underline'>
+                  <HoverWord
+                    word="video games"
+                    imgSrc="/eftlogo4.png"
+                    alt="EFT"
+                  />
+                </span> or staying active through <span className='text-white no-underline'>
+                  <HoverWord
+                    word="sports."
+                    imgSrc="/jiujitsulogoBLANCO.png"
+                    alt="Jiu Jitsu"
+                  />
+                </span>
+              </p>
+            </div>
+          </Reveal>
+        </section>
+
+        <Experience />
+        <Projects />
+
+        <footer className="pt-24 md:pt-32 text-center">
+          <p className="text-gray-600 text-xs tracking-widest uppercase">Built with React & Tailwind — Youssef Khalifa</p>
+        </footer>
+      </main>
     </>
   );
 }
